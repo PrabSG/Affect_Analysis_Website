@@ -418,7 +418,7 @@ hr {
 #footer {
 	background: grey;
 	color: white;
-	padding: 20px 0;
+	padding: 15px 0;
 	text-align: center;
 }
 #footer h3 {
@@ -430,17 +430,29 @@ hr {
 	font-size: 13px;
 	margin-top: 10px;
 }
-#footer img {
-	font-size: 13px;
+#footer i.far {
+	color: #f0bb3d;
+	font-size: 25px;
 }
-img.img-footer {
-	width: 78px;
-	height: 90px;
-	border: 0;
-	border-radius: 0;
-	background-color: black;
+#footer i.far:hover {
+	color: red;
 }
-
+#footer .popup {
+	display: none; 
+	position: fixed; 
+	z-index: 1; 
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+	-webkit-animation-name: fadeIn;
+	-webkit-animation-duration: 0.4s;
+	animation-name: fadeIn;
+	animation-duration: 0.4s
+}
 @media (max-width: 768px) {
 .hover-bg .hover-text {
 	padding: 20%;
