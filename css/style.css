@@ -1,0 +1,385 @@
+/* Main elements that will be used often */
+
+body, html {
+	font-family: 'Open Sans', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	color: #777;
+	width: 100% !important;
+	height: 100% !important;
+}
+h1 {
+	font-weight: 700;
+}
+h1 strong {
+	font-weight: 900;
+}
+h2 {
+	text-transform: uppercase;
+	line-height: 20px;
+	font-weight: 600;
+	margin: 0;
+	color: #555;
+}
+h3 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #555;
+}
+h4 {
+	font-weight: 500;
+	color: #555;
+}
+h5 {
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 20px;
+}
+p {
+	font-size: 14px;
+}
+a {
+	color: #f0bb3d;
+}
+a:hover, a:focus {
+	text-decoration: none;
+	color: #f0bb3d;
+}
+ul, ol {
+	list-style: none;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+ul, ol {
+	padding: 0;
+	webkit-padding: 0;
+	moz-padding: 0;
+}
+hr {
+	height: 8px;
+	width: 100px;
+	text-align: center;
+	position: relative;
+	background: #f0bb3d;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border: 0;
+}
+
+/* Loading Screen Elements: */
+
+#loadingscreen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #ddd;
+	z-index: 99999;
+	height: 100%;
+}
+#loadingstatus {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 64px;
+	height: 64px;
+	margin: -32px 0 0 -32px;
+	padding: 0;
+}
+
+/* Navigation Bar Elements: */
+
+.navbar-custom {
+	padding: 0;
+	border-bottom: 0;
+	letter-spacing: 1px;
+	background: grey;
+	text-transform: uppercase;
+}
+.navbar-custom .navbar-brand {
+	font-weight: 600;
+}
+.navbar-custom .navbar-brand i.fas {
+	color: #f0bb3d;
+}
+.navbar-custom .navbar-brand:focus {
+	outline: 0;
+}
+.navbar-custom .navbar-toggle {
+	color: white;
+	font-size: 18px;
+	border-radius: 2px;
+	padding: 4px 4px;
+}
+.navbar-custom .navbar-toggle:hover, .navbar-custom .navbar-toggle:focus {
+	background-color: #f0bb3d;
+	color: white;
+}
+.navbar-custom .navbar-brand .navbar-toggle:focus, .navbar-custom .navbar-brand .navbar-toggle:active {
+	outline: 0;
+}
+.navbar-custom a {
+	color: white;
+}
+.navbar-custom .nav li a {
+	-webkit-transition: background .3s ease-in-out;
+	-moz-transition: background .3s ease-in-out;
+	transition: background .3s ease-in-out;
+}
+.navbar-custom .nav li a:hover {
+	outline: 0;
+	color: #f0bb3d;
+	background-color: transparent;
+}
+.navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
+	outline: 0;
+	background-color: transparent;
+	color: #f0bb3d;
+}
+.navbar-custom .nav li.active {
+	outline: 0;
+}
+.navbar-custom .nav li.active a {
+	background-color: rgba(255,255,255,.3);
+}
+.navbar-custom .nav li.active a:hover {
+	color: white;
+}
+
+/* Section Common Elements: */
+
+.section-title.center {
+	padding: 30px 0;
+}
+.section-title h2, .section-title.center h2 {
+	margin-bottom: 30px;
+}
+
+.space {
+	margin-top: 40px;
+}
+
+/* Landing Page Elements: */
+
+#header {
+	position:relative;
+	width: 100%;
+	height: 100%;
+	background: black;
+}
+#header .header-body {
+	position:relative;
+	width: 100%;
+	height: 100%;
+	background: black;
+}
+#header .split.left h1 {
+	font-size: 3vw;
+	color: white;
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+}
+#header .split.right h1 {
+	font-size: 2vw;
+	color: white;
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	transform: translateX(-50%);
+	white-space: normal;
+}
+.split {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+}
+.split.left {
+	text-align: center;
+	left:0;
+	background: black;
+	background-size: cover;
+}
+.split.left:before {
+	text-align: center;
+	position:absolute;
+	width: 100%;
+	height: 100%;
+}
+.split.right {
+	text-align: center;
+	right:0;
+	background: black;
+	background-size: cover;
+}
+
+.split.right:before {
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.split.left, .split.right, .split.right:before, .split.left:before {
+  transition: 1000ms all ease-in-out;
+}
+
+.hover-left .left {
+  width: 75%;
+}
+
+.hover-left .right {
+  width: 25%;
+}
+
+.hover-left .right:before {
+  z-index: 2;
+}
+
+
+.hover-right .right {
+  width: 75%;
+}
+
+.hover-right .left {
+  width: 25%;
+}
+
+.hover-right .left:before {
+  z-index: 2;
+}
+
+/* Challanges Container Elements: */
+
+#challenges {
+	padding: 140px 0;
+	background: #f6f6f6;
+}
+#challenges .challenges-text {
+	margin-left: 10px;
+}
+#challenges img {
+	margin-top: 20px;
+}
+#challenges H4 {
+	font-size: 20px;
+}
+#challenges li {
+	margin-bottom: 3px;
+	list-style: none;
+	padding: 0;
+	font-size: 13px;
+}
+#challenges li:before {
+	content: "✓";
+	font-weight: 600;
+	padding-right: 10px;
+	color: #f0bb3d;
+}
+#challenges i.fa {
+	float: left;
+	display: block;
+	margin-right: 15px;
+	color: white;
+	font-size: 44px;
+	text-shadow: 0 0 1px grey;
+}
+#challenges p {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+/* Database comparison section: */
+
+#databases {
+	padding: 140px 0;
+	background: black;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#databases .data {
+	padding: 20px 10px;
+} 
+#databases h2 {
+	color: white;
+}
+#databases h3 {
+	padding: 1px 0;
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
+}
+#databases h4{
+	padding: 4px 0;
+	font-size: 30px;
+	font-weight: 600;
+	color: white;
+}
+#databases p {
+	color: rgba(255,255,255,0.7);
+}
+#databases i.fas {
+	font-size: 48px;
+	color: #f0bb3d;
+	transition: all 0.5s;
+}	
+#databases .count
+{
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
+}
+
+
+/* Footer Elements: */
+
+#footer {
+	background: grey;
+	color: white;
+	padding: 20px 0;
+	text-align: center;
+}
+#footer h3 {
+	color: white;
+	font-size: 15px;
+	margin-top: 10px;
+}
+#footer p {
+	font-size: 13px;
+	margin-top: 10px;
+}
+#footer img {
+	font-size: 13px;
+}
+img.img-footer {
+	width: 78px;
+	height: 90px;
+	border: 0;
+	border-radius: 0;
+	background-color: black;
+}
+
+@media (max-width: 768px) {
+.hover-bg .hover-text {
+	padding: 20%;
+}
+}
