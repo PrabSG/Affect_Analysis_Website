@@ -222,7 +222,7 @@ hr {
 .split.left {
 	text-align: center;
 	left:0;
-	background: black;
+	background:  url('http://yesofcorsa.com/wp-content/uploads/2018/02/Neural-Network-Art-Wallpaper-Free.png') center center no-repeat;
 	background-size: cover;
 }
 .split.left:before {
@@ -435,6 +435,7 @@ hr {
 	font-size: 25px;
 }
 #footer i.far:hover {
+	cursor: pointer;
 	color: red;
 }
 #footer .modal {
@@ -442,6 +443,13 @@ hr {
 }
 #footer .modal .modal-header {
 	background-color: black;
+}
+#footer .modal-open .container-fluid, .modal-open  .container {
+    -webkit-filter: blur(2px) grayscale(60%);
+	-khtml-user-select: blur(2px) grayscale(60%);
+	-moz-user-select: blur(2px) grayscale(60%);	
+	-ms-user-select: blur(2px) grayscale(60%);
+	-o-user-select: blur(2px) grayscale(60%);
 }
 @media (max-width: 768px) {
 .hover-bg .hover-text {
