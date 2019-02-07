@@ -3,42 +3,42 @@
 <html lang="en">
 
 	<head>
-	
+
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		
+
 		<title> Affect Analysis </title>
-		
+
 		<!-- Bootstrap 3 (better than 4) and Fontawesome imports -->
-		
+
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" 
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
 			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 		<!-- Other style imports (including self-created) -->
-		
+
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
 
 	</head>
-	
+
 	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-		
+
 		<!-- Loading Screen - has a javascript -->
-		
+
 		<div id="loadingscreen">
 			<div id="loadingstatus"> <img src="img/loadingstatus.gif" height="64" width="64" alt=""> </div>
 		</div>
-		
+
 		<!-- Navigation Bar - has a javascript for appearing only when landing page is left -->
-		
+
 		<nav class="navbar navbar-custom navbar-fixed-top">
 			 <div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
-					<a class="navbar-brand page-scroll" href="#page-top"> <i class="fas fa-podcast"> </i> Affect Analysis</a> 
+					<a class="navbar-brand page-scroll" href="#page-top"> <i class="fas fa-podcast"> </i> Affect Analysis</a>
 				</div>
-  
+
 				<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 					<ul class="nav navbar-nav">
 						<li class="hidden"> <a href="#page-top"></a> </li>
@@ -53,31 +53,31 @@
         </nav>
 
 		<!-- Landing Page: -->
-		
+
 		<section id="header">
 			<div class="header-body">
-				<div class="split left">	
+				<div class="split left">
 					<h1>Dimitrios Kollias</h1>
 					<a href="#challenges" class ="page-scroll button">Go To Publications Section</a>
 				</div>
 				<div class="split right">
 					<h1>Emotion Recognition & Generation</h1>
-					<div class="arrow"> 
+					<div class="arrow">
 						<span> </span>
 						<span> </span>
 					</div>
 				</div>
 			</div>
 		</section>
-						
-		
-	
+
+
+
 		<!-- The Introduction: -->
-		
+
 		<section id="introduction">
 			<div class="container">
 				<div class="section-title text-center center">
-					<h2>Basics 101</h2> 
+					<h2>Basics 101</h2>
 					<hr>
 				</div>
 				 <div class="row">
@@ -91,18 +91,52 @@
 				</div>
 			</div>
 		</section>
-		
-		<!-- Some Database statistics: --> 
-		
+
+		<!-- Some Database statistics and information: -->
+
 		<section id="databases" class="text-center">
 			<div class="container">
+
+				<div class="section-title text-center center">
+					<h2>Emotion Recognition Databases</h2>
+					<hr>
+				</div>
+				 <div class="row">
+					 <div class="col-md-4">
+						<div class="intro-text">
+							<h4>A new challenge...</h4>
+								<p>For the past several years, the research area of emotion detection and analysis has faced the need of analysing images showing natural behaviours, rather than controlled ones. (1, page 2). Thus, a new challenge was improving databases like ’MMI database’ or ‘Multi-Pie database’ which consist of frames displaying posed behaviour only (1, p.2). The new approach was trying to capture subjects in an “in the wild" environment, so that the accuracy of the analysis could increase (1, p.2). However, even such existing datasets like AFEW or AFEW-VA have proved to be limited, leading to the need of creating the Aff-Wild database (1, p.3).</p>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="intro-text">
+							<h4>Limitations of existing databases</h4>
+							 <p>The limitations of existing databases like RECOLA, AFEW or AFEW-VA were mainly due to controlled laboratory conditions (in case of RECOLA only), reduced number of captured frames and very few annotators (1, p.4).
+
+ In case of the RECOLA dataset, the subjects were recorded for a total of 9.5 hours and then the annotation process was carried by 6 people (1, p.4). The main downside (apart from the controlled environment) is represented by the very small number of videos (1, p.4). In contrast, the AFEW dataset, which consists of real-world situations, has over 1800 analysed videos, but its drawbacks are the annotation restricted to the basic seven expressions and the total number of frames which is approximately 3 times smaller than the one of RECOLA (1, p.4). Finally, AFEW-VA is limited through the very reduced number of frames (more than 10 times smaller than RACOLA’s) and the discrete values of valance and arousal (1, p.4).</p>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="intro-text">
+					<h4>The Aff-Wild</h4>
+					<p>All these issues with the existing databases lead to the development of the Aff-Wild, a dataset which consists of more than 30 hours of recordings from 298 videos (1, p.5). The main goal of the new dataset was to gather frames reflecting spontaneous behaviour of the subjects (1, p5). This was captured from a series of YouTube videos in which people react to a variety of situations, for instance an unexpected scenario in a film or eating something that they have never eaten before (1, p.5). An important feature of the Aff-Wild is represented by the different cultural backgrounds of the subjects as well as the diverse illumination and occlusion conditions (1, p.5). Another improvement brought by the Aff-Wild is the [-1, 1] interval in which the valence and arousal can range in a continuous manner, the annotation process being carried by 8 annotators (1, p.5).
+
+As an overview, the Aff-Wild database provides a very powerful methodology for analysing not only static emotional states of the subjects, but also fast transitions of the facial expressions (1, p.5). </p>
+			</div>
+		</div>
+
+		</div>
+		    <br><br>
+
 				<div class="section-title center">
 					<h2>Databases Comparison</h2>
 					<hr>
 				</div>
-				
+
 				<div class="space"> </div>
-				
+
 				<div class="row">
 					<div class="col-md-3 col-sm-6">
 						<div class="data">
@@ -113,7 +147,7 @@
 							<h3>AFEW-VA</h3>
 							<h3>Aff-Wild</h3>
 						</div>
-						
+
 					</div>
 					<div class="col-md-3 col-sm-6">
 						<div class="data">
@@ -163,12 +197,12 @@
 				<div class="row">
 					<div class="col-md-3 col-sm-6">
 						<div class="row">
-						
+
 							<div class="cod-md-5 col-sm-7">
 								<i class="far fa-user" data-toggle="modal" data-target="#modalCalin"> </i>
 								<p>Calin</p>
 							</div>
-							
+
 							<div class="cod-md-4 col-sm-3">
 								<i class="far fa-user" data-toggle="modal" data-target="#modalAndrei"> </i>
 								<p>Andrei</p>
@@ -193,7 +227,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div id="modalCalin" class="modal fade" role="dialog">
 				<div class="modal-dialog">
 					<div class="modal-content">
@@ -209,8 +243,8 @@
 						</div>
 					</div>
 				</div>
-			</div>	
-			
+			</div>
+
 			<div id="modalAndrei" class="modal fade" role="dialog">
 				<div class="modal-dialog">
 					<div class="modal-content">
@@ -226,8 +260,8 @@
 						</div>
 					</div>
 				</div>
-			</div>	
-			
+			</div>
+
 			<div id="modalPrabhjot" class="modal fade" role="dialog">
 				<div class="modal-dialog">
 					<div class="modal-content">
@@ -243,8 +277,8 @@
 						</div>
 					</div>
 				</div>
-			</div>	
-			
+			</div>
+
 			<div id="modalDaniel" class="modal fade" role="dialog">
 				<div class="modal-dialog">
 					<div class="modal-content">
@@ -260,28 +294,28 @@
 						</div>
 					</div>
 				</div>
-			</div>	
-			
-			
+			</div>
+
+
 		</section>
-		
+
 		<!-- JQuery import: -->
-		
-		<script src="js/JQuery.js"></script> 
-		 
-		<!-- Other javascripts that are imported: --> 
-		
-		<script src="js/bootstrap.js"></script> 
-		<script src="js/SmoothScroll.js"></script> 
-		<script src="js/jquery.isotope.js"></script> 
-		<script src="js/jquery.parallax.js"></script> 
+
+		<script src="js/JQuery.js"></script>
+
+		<!-- Other javascripts that are imported: -->
+
+		<script src="js/bootstrap.js"></script>
+		<script src="js/SmoothScroll.js"></script>
+		<script src="js/jquery.isotope.js"></script>
+		<script src="js/jquery.parallax.js"></script>
 
 		<!-- Javascripts that we created: -->
-		
+
 		<script src="js/main.js"> </script>
 		<script src="js/header.js"> </script>
 		<script src="js/counter.js"> </script>
-		
+
 	</body>
-	
+
 </html>
