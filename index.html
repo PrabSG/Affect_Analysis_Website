@@ -42,7 +42,7 @@
 				<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 					<ul class="nav navbar-nav">
 						<li class="hidden"> <a href="#page-top"></a> </li>
-						<li> <a class="page-scroll" href="#introduction" >Introduction</a> </li>
+						<li> <a class="page-scroll" href="#introduction" >Basics</a> </li>
 						<li> <a class="page-scroll" href="#solutions">Innovations</a> </li>
 						<li> <a class="page-scroll" href="#solutions">Publications</a> </li>
 						<li> <a class="page-scroll" href="#more">More</a> </li>
@@ -81,29 +81,88 @@
 					<hr>
 				</div>
 				 <div class="row">
-					 <div class="col-md-4">
-						<div class="intro-text">
+					<div class="col-md-6">
+						<div class="introduction-text">
 							<h4>What is the Affect Theory?</h4>
 								<p>Affect Theory (also known as Affect Analysis) is a theory that seeks to organise 'affects', used interchangeably with 'emotions' into categories, based on different criteria.
 								The complexity of this subject makes it an ongoing study in numerous fields, ranging from computer vision to psychology, psychoanalysis and neuroscience.</p>
 						</div>
 					</div>
+					<div class="col-md-6">
+						<div class="introduction-text">
+							<h4>Core parts of Affect Analysis:</h4>
+								<p>There are three core parts that are described on this page:</p>
+								<ul>
+									<li> <i class="fas fa-plus-circle"> </i>Emotion Generation - essentially, it focuses on modifying facial aspects to simulate different affects.</li>
+									<li> <i class="fas fa-eye"> </i>Emotion Recognition - focuses on identyfying different emotions, through different criteria.</li>
+									<li> <i class="fas fa-box-open"> </i>Databases - stores different emotions (in the form of videos and images) used to create, train and test different networks for affect recognition and generation.</li>
+								</ul>
+						</div>
+					</div>
 				</div>
+				
+				<br><br>
+				
+				<div class="section-title text-center center">
+					<h2>Classifying Emotions</h2>
+					<hr>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-6">
+					<div class="introduction-text">
+							<h4>The Seven Basic Emotions:</h4>
+								<p></p>
+						</div>
+					</div>
+				</div>
+				
 			</div>
 		</section>
 		
 		<!-- Some Database statistics: --> 
 		
-		<section id="databases" class="text-center">
+		<section id="databases">
 			<div class="container">
-				<div class="section-title center">
+			
+				<div class="section-title text-center center">
+					<h2>Emotion Recognition Databases</h2>
+					<hr>
+				</div>
+				<div class="row">
+					 <div class="col-md-4">
+						<div class="databases-text">
+							<h4>A new challenge...</h4>
+								<p>For the past several years, the research area of emotion detection and analysis has faced the need of analysing images showing natural behaviours, rather than controlled ones. (1, page 2). Thus, a new challenge was improving databases like ’MMI database’ or ‘Multi-Pie database’ which consist of frames displaying posed behaviour only (1, p.2). The new approach was trying to capture subjects in an “in the wild" environment,
+								so that the accuracy of the analysis could increase (1, p.2). However, even such existing datasets like AFEW or AFEW-VA have proved to be limited, leading to the need of creating the Aff-Wild database (1, p.3).</p>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="databases-text">
+							<h4>Limitations of existing databases</h4>
+							<p>The limitations of existing databases like RECOLA, AFEW or AFEW-VA were mainly due to controlled laboratory conditions (in case of RECOLA only), reduced number of captured frames and very few annotators (1, p.4). In case of the RECOLA dataset, the subjects were recorded for a total of 9.5 hours and then the annotation process was carried by 6 people (1, p.4). The main downside (apart from the controlled environment) is represented by the very small number of videos (1, p.4). In contrast,
+							the AFEW dataset, which consists of real-world situations, has over 1800 analysed videos, but its drawbacks are the annotation restricted to the basic seven expressions and the total number of frames which is approximately 3 times smaller than the one of RECOLA (1, p.4). Finally, AFEW-VA is limited through the very reduced number of frames (more than 10 times smaller than RACOLA’s) and the discrete values of valance and arousal (1, p.4).</p>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="intro-text">
+							<h4>The Aff-Wild</h4>
+							<p>All these issues with the existing databases lead to the development of the Aff-Wild, a dataset which consists of more than 30 hours of recordings from 298 videos (1, p.5). The main goal of the new dataset was to gather frames reflecting spontaneous behaviour of the subjects (1, p5). This was captured from a series of YouTube videos in which people react to a variety of situations, 
+							for instance an unexpected scenario in a film or eating something that they have never eaten before (1, p.5). An important feature of the Aff-Wild is represented by the different cultural backgrounds of the subjects as well as the diverse illumination and occlusion conditions (1, p.5). Another improvement brought by the Aff-Wild is the [-1, 1] interval in which the valence and arousal can range in a continuous manner, the annotation process being carried by 8 annotators (1, p.5). As an overview, the Aff-Wild database provides a very powerful methodology for analysing not only static emotional states of the subjects, but also fast transitions of the facial expressions (1, p.5). </p>
+						</div>
+					</div>
+				</div>
+				
+				<br><br>
+
+				<div class="section-title text-center center">
 					<h2>Databases Comparison</h2>
 					<hr>
 				</div>
 				
-				<div class="space"> </div>
-				
-				<div class="row">
+				<div class="row text-center">
 					<div class="col-md-3 col-sm-6">
 						<div class="data">
 							<i class="fas fa-database"> </i>

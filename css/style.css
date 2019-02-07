@@ -331,11 +331,13 @@ hr {
 }
 }
 
-/* introduction Container Elements: */
+/* Introduction Elements: */
 
 #introduction {
 	padding: 140px 0;
 	background: #f6f6f6;
+	background-size: cover;
+	background-attachment: fixed;
 }
 #introduction .introduction-text {
 	margin-left: 10px;
@@ -343,33 +345,30 @@ hr {
 #introduction img {
 	margin-top: 20px;
 }
-#introduction H4 {
+#introduction h4 {
 	font-size: 20px;
 }
 #introduction li {
 	margin-bottom: 3px;
 	list-style: none;
 	padding: 0;
-	font-size: 13px;
+	font-size: 16px;
 }
 #introduction li:before {
-	content: "✓";
 	font-weight: 600;
 	padding-right: 10px;
 	color: #f0bb3d;
 }
-#introduction i.fa {
-	float: left;
-	display: block;
-	margin-right: 15px;
-	color: white;
-	font-size: 44px;
-	text-shadow: 0 0 1px grey;
-}
 #introduction p {
 	margin-top: 20px;
 	margin-bottom: 30px;
+	font-size: 16px;
 }
+#introduction i.fas {
+	font-size: 16px;
+	color: #f0bb3d;
+	padding: 4px 6px;
+}	
 
 /* Database comparison section: */
 
@@ -381,6 +380,9 @@ hr {
 }
 #databases .data {
 	padding: 20px 10px;
+}
+#databases .databases-text {
+	margin-left: 10px;
 } 
 #databases h2 {
 	color: white;
@@ -391,27 +393,26 @@ hr {
 	font-weight: 600;
 	color: white;
 }
-#databases h4{
-	padding: 4px 0;
-	font-size: 30px;
-	font-weight: 600;
+#databases h4 {
+	font-size: 20px;
 	color: white;
 }
 #databases p {
-	color: rgba(255,255,255,0.7);
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-size: 16px;
 }
 #databases i.fas {
+	padding: 12px 0;
 	font-size: 48px;
 	color: #f0bb3d;
-	transition: all 0.5s;
 }	
-#databases .count
-{
+#databases .count {
 	font-size: 20px;
 	font-weight: 600;
 	color: white;
 }
-
 
 /* Footer Elements: */
 
