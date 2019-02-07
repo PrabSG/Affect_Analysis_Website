@@ -331,34 +331,34 @@ hr {
 }
 }
 
-/* Challanges Container Elements: */
+/* introduction Container Elements: */
 
-#challenges {
+#introduction {
 	padding: 140px 0;
 	background: #f6f6f6;
 }
-#challenges .challenges-text {
+#introduction .introduction-text {
 	margin-left: 10px;
 }
-#challenges img {
+#introduction img {
 	margin-top: 20px;
 }
-#challenges H4 {
+#introduction H4 {
 	font-size: 20px;
 }
-#challenges li {
+#introduction li {
 	margin-bottom: 3px;
 	list-style: none;
 	padding: 0;
 	font-size: 13px;
 }
-#challenges li:before {
+#introduction li:before {
 	content: "✓";
 	font-weight: 600;
 	padding-right: 10px;
 	color: #f0bb3d;
 }
-#challenges i.fa {
+#introduction i.fa {
 	float: left;
 	display: block;
 	margin-right: 15px;
@@ -366,7 +366,7 @@ hr {
 	font-size: 44px;
 	text-shadow: 0 0 1px grey;
 }
-#challenges p {
+#introduction p {
 	margin-top: 20px;
 	margin-bottom: 30px;
 }
