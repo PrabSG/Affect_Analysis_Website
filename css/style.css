@@ -338,12 +338,10 @@ hr {
 	background: #f6f6f6;
 	background-size: cover;
 	background-attachment: fixed;
+	background-color: grey;
 }
 #introduction .introduction-text {
 	margin-left: 10px;
-}
-#introduction img {
-	margin-top: 20px;
 }
 #introduction h4 {
 	font-size: 20px;
@@ -370,7 +368,32 @@ hr {
 	padding: 4px 6px;
 }	
 
-/* Database comparison section: */
+/* Benefits section: */
+
+#benefits {
+	padding: 140px 0;
+	background: #f6f6f6;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#benefits .benefits-text {
+	margin-left: 10 px;
+}
+#benefits h4 {
+	font-size: 20px;
+}
+#benefits p {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-size: 16px;
+}
+#benefits i.fas {
+	font-size: 250px;
+	color: #f0bb3d;
+	padding: 4px 6px;
+}	
+
+/* Database (and comparison) section: */
 
 #databases {
 	padding: 140px 0;
