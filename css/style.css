@@ -9,7 +9,7 @@ body, html {
 	height: 100% !important;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
-	-moz-user-select: none;	
+	-moz-user-select: none;
 	-ms-user-select: none;
 	-o-user-select: none;
 	user-select: none;
@@ -345,12 +345,17 @@ hr {
 }
 #introduction h4 {
 	font-size: 20px;
+	color: #f0bb3d;
+}
+#introduction h2 {
+	color: white;
 }
 #introduction li {
 	margin-bottom: 3px;
 	list-style: none;
 	padding: 0;
 	font-size: 16px;
+	color: white;
 }
 #introduction li:before {
 	font-weight: 600;
@@ -361,12 +366,13 @@ hr {
 	margin-top: 20px;
 	margin-bottom: 30px;
 	font-size: 16px;
+	color: white;
 }
 #introduction i.fas {
 	font-size: 16px;
 	color: #f0bb3d;
 	padding: 4px 6px;
-}	
+}
 
 /* Benefits section: */
 
@@ -391,7 +397,7 @@ hr {
 	font-size: 250px;
 	color: #f0bb3d;
 	padding: 4px 6px;
-}	
+}
 
 /* Database (and comparison) section: */
 
@@ -406,7 +412,7 @@ hr {
 }
 #databases .databases-text {
 	margin-left: 10px;
-} 
+}
 #databases h2 {
 	color: white;
 }
@@ -430,7 +436,7 @@ hr {
 	padding: 12px 0;
 	font-size: 48px;
 	color: #f0bb3d;
-}	
+}
 #databases .count {
 	font-size: 20px;
 	font-weight: 600;
@@ -471,7 +477,7 @@ hr {
 #footer .modal-open .container-fluid, .modal-open  .container {
     -webkit-filter: blur(2px) grayscale(60%);
 	-khtml-user-select: blur(2px) grayscale(60%);
-	-moz-user-select: blur(2px) grayscale(60%);	
+	-moz-user-select: blur(2px) grayscale(60%);
 	-ms-user-select: blur(2px) grayscale(60%);
 	-o-user-select: blur(2px) grayscale(60%);
 }
