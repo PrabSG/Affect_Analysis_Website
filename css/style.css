@@ -346,7 +346,6 @@ hr {
 	color: white;
 }
 #introduction h4 {
-	color: white;
 	font-size: 20px;
 	color: #f0bb3d;
 }
@@ -429,7 +428,7 @@ hr {
 }
 #databases h4 {
 	font-size: 20px;
-	color: white;
+	color: #f0bb3d;
 }
 #databases p {
 	color: white;
@@ -446,6 +445,32 @@ hr {
 	font-size: 20px;
 	font-weight: 600;
 	color: white;
+}
+
+/* How It Works Section: */
+
+#howitworks {
+	padding: 140px 0;
+	background: #f6f6f6;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#howitworks .howitworks-text {
+	margin-left: 10 px;
+}
+#howitworks h4 {
+	font-size: 20px;
+	color: #f0bb3d;
+}
+#howitworks p {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-size: 16px;
+}
+#howitworks i.fas {
+	font-size: 250px;
+	color: #f0bb3d;
+	padding: 4px 6px;
 }
 
 /* Footer Elements: */

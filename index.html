@@ -166,17 +166,17 @@
 				<div class="row">
 					 <div class="col-md-4">
 						<div class="databases-text">
-							<h4>A new challenge...</h4>
-								<p>For the past several years, the research area of emotion detection and analysis has faced the need of analysing images showing natural behaviours, rather than controlled ones. Thus, a new challenge was improving databases like ’MMI database’ or ‘Multi-Pie database’ which consist of frames displaying posed behaviour only. The new approach was trying to capture subjects in an “in the wild" environment,
-								so that the accuracy of the analysis could increase. However, even such existing datasets like AFEW or AFEW-VA have proved to be limited, leading to the need of creating the Aff-Wild database.</p>
+							<h4>A New Challenge...</h4>
+								<p>For the past several years, the research area of emotion detection and analysis has faced the need of analysing images showing natural behaviours, rather than controlled ones. Thus, a new challenge was improving previous databases (like ’MMI database’ or ‘Multi-Pie database’) which consist of images (or frames) displaying posed behaviour only. The new approach was trying to capture subjects in an “in the wild" environment,
+                                so that the accuracy of the analysis could increase and be more representative for real life situations. However, even such existing datasets have proved to be limited, in the sense that they did not provide enough consistency in order to properly analyse the different representations of emotions. We present here 3 databses which reflect these limitations, having made a comparison table: RECOLA, AFEW and AFEW-VA, and then introduce the new dataset Aff-Wild, tailored to the needs of capturing more genuine expressions.</p>		
 						</div>
 					</div>
 
 					<div class="col-md-4">
 						<div class="databases-text">
-							<h4>Overcoming limitations</h4>
-							<p>The limitations of existing databases like RECOLA, AFEW or AFEW-VA were mainly due to controlled laboratory conditions (in case of RECOLA only), reduced number of captured frames and very few annotators. In case of the RECOLA dataset, the subjects were recorded for a total of 9.5 hours and then the annotation process was carried by 6 people. The main downside (apart from the controlled environment) is represented by the very small number of videos. In contrast,
-							the AFEW dataset, which consists of real-world situations, has over 1800 analysed videos, but its drawbacks are the annotation restricted to the basic seven expressions and the total number of frames which is approximately 3 times smaller than the one of RECOLA. Finally, AFEW-VA is limited through the very reduced number of frames (more than 10 times smaller than RACOLA’s) and the discrete values of valance and arousal.</p>
+							<h4>Overcoming Limitations</h4>
+							<p>The limitations of existing databases like RECOLA, AFEW or AFEW-VA were mainly due to controlled laboratory conditions (in case of RECOLA only), reduced number of captured frames and very few annotators. A 'controlled laboratory condition' is a situation in which the subject does not show certain emotions in a natural mannner, but is requested to more likely 'imitate' a certain feeling, e.g. happiness. This simulated emotion is then 'annotated' by a specialised person,called an 'annotator', who classifies given images and videos by different criteria on the basis of the 7 basic emotion categories. Moreover, they can also give values in terms of valence and arousal, the annotated information being then used for training. In case of the RECOLA dataset, the subjects were recorded for a total of 9.5 hours and then the annotation process was carried by 6 people. The main downside (apart from the controlled environment) is represented by the very small number of videos. In contrast,
+                            the AFEW dataset, which consists of real-world situations, has over 1800 analysed videos, but its drawbacks are the annotation restricted to the basic seven expressions and the total number of frames which is approximately 3 times smaller than the one of RECOLA. Finally, AFEW-VA is limited through the very reduced number of frames (more than 10 times smaller than RACOLA’s) and the discrete values of valance and arousal.</p>
 						</div>
 					</div>
 
@@ -256,11 +256,44 @@
 		<section id="howitworks">
 			<div class="container">
 				<div class="section-title text-center center">
-					<h2>How It Works</h2>
+					<h2>How Image Recognition and Generation Works</h2>
+					<hr>
+				</div>
+			
+			
+				<div class="row">
+					<div class="col-md-6 text-center">
+						<br><br><br>
+						<i class="fas fa-desktop"></i>
+					</div>
+					<div class="col-md-6">
+						<h4>"Older" Methods - Computer Vision</h4>
+						<p>Before the invention of neural networks, computer vision was used for recognising emotions from pictures. Different parts of the face would be evaluated, and depending on the general form it took, it would be categorised in one of the 7 basic emotions (both eyebrows being lifted and the mouth wide opened would most likely mean that the person is scared or surprised). This was evaluated by measuring different body parts and what percentage of the picture they would occupy, or the distances between different elements (a higher distance between eyes and eyebrows means surprise). However, using computer vision is quite limited, as for example a real human can feel several emotions at the same time (you can be happy and surprised at the same time) - it could also not measure the intensity of the affects well.</p>
+					</div>
+				</div>
+
+				<br><br>
+				
+				<div class="row">
+					<div class="col-md-6">
+						<h4>"Younger" Methods - Neural Networks</h4>
+						<p>The recent popularity in neural networks also expanded in this field, due to their high versatility. Through training, they become able to recognise a varied range of emotions, also becoming able to mix different affects between them. Their appearance also made the generation of emotions from neutral states feasible. Two types of neural networks are used, namely CNNs (Convolutional Neural Networks) and RNNs (Recurrent Neural Networks).</p>
+					</div>
+					<div class="col-md-6 text-center">
+						<br><br><br>
+						<i class="fas fa-network-wired"></i>
+					</div>
+				</div>
+				
+				<br><br>
+				
+				<div class="section-title text-center center">
+					<h2>The CNN and RNN Architectures</h2>
 					<hr>
 				</div>
 			</div>
 		</section>
+		
 
 		<!-- The footer -->
 
