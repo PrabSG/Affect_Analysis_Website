@@ -335,15 +335,18 @@ hr {
 
 #introduction {
 	padding: 140px 0;
-	background: #f6f6f6;
+	background: grey;
 	background-size: cover;
 	background-attachment: fixed;
-	background-color: grey;
 }
 #introduction .introduction-text {
 	margin-left: 10px;
 }
+#introduction h2 {
+	color: white;
+}
 #introduction h4 {
+	color: white;
 	font-size: 20px;
 	color: #f0bb3d;
 }
@@ -351,6 +354,7 @@ hr {
 	color: white;
 }
 #introduction li {
+	color: white;
 	margin-bottom: 3px;
 	list-style: none;
 	padding: 0;
@@ -363,6 +367,7 @@ hr {
 	color: #f0bb3d;
 }
 #introduction p {
+	color: white;
 	margin-top: 20px;
 	margin-bottom: 30px;
 	font-size: 16px;
