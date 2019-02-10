@@ -126,10 +126,9 @@
 						</ul>
 						
 						<p style="color: #fb4141">Disadvantages:</p>
-						
 						<ul>
-							<li> <i class="fas fa-minus-circle" style="color: #fb4141"> </i>Not Very Representative of Real Life - There are many cases in which humans don't feel one emotion - you can be surprised and happy at the same time.</li>
-							<li> <i class="fas fa-minus-circle" style="color: #fb4141"> </i>Simple - Human emotions vary in intesity, and this method doesn't account for this aspect</li>
+							<li> <i class="fas fa-minus-circle" style="color: #fb4141"> </i>Not Very Representative of Real Life - there are many cases in which humans don't feel one emotion - you can be surprised and happy at the same time.</li>
+							<li> <i class="fas fa-minus-circle" style="color: #fb4141"> </i>Simple - human emotions vary in intesity, and this method doesn't account for this aspect</li>
 							<li> <i class="fas fa-minus-circle" style="color: #fb4141"> </i>Surprise and Fear can often be confused with one another, different annotators having different opinions about what different emotions from different individuals represent.</li>
 						</ul>
 						
@@ -140,9 +139,39 @@
 				
 				<div class="row">
 					<div class="text">
-					
 						<h4>Compound Emotions:</h4>
 						<p>An improvement to the 7 basic emotions that has become recently used in the last year is compound emotions. This essentially unites two emotions into a set, such as happy-surprised. Although an improvement, the drawbacks that the seven basic emotions have are found here as well.</p>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="text">
+						<h4>Action Units:</h4>
+						<p>Action units is the part of emotion recognition that focuses on identifying muscle movement. Each muscle part is analysed (e.g. whether one eyebrow goes up and one goes down), also noting the ammount of movement for each muscle, thus evaluating intensity. The rules used for classifying are deterministic, as if some muscles are "activated" and some are not can point to a specific emotion.</p>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-6 text-center">
+						<img src="img/valencearousal.png" class="img-responsive" alt="The Valence Arousal 2D Wheel">
+						<p>The Emotion 2D Wheel</p>
+						<p>Source: Deep Affect Prediction in-the-wild: Aff-Wild Database and Challenge, Deep Architectures, and Beyond</p>
+					</div>
+					
+					<div class="col-md-6">
+						<h4>The Valence-Arousal Space</h4>
+						<p>This is, differently from the first two, a regressive problem. This means that emotions can have floating values (like being 1.5 happy), making emotion classification even more realistic. Valence evaluates if (and how much) an emotion is positive or negative, while arousal evaluates if the emotion is active.
+						
+						<p style="color: #8cf966">Advantages:</p>
+						<ul>
+							<li> <i class="fas fa-plus-circle" style="color: #8cf966"> </i>Complex - this enables classifying more general feelings, that intersect between multiple emotions.</li>
+							<li> <i class="fas fa-plus-circle" style="color: #8cf966"> </i>Realistic - it is the best representation that we have at the moment for affects, being able to classify natural behaviour.</li>
+						</ul>
+						
+						<p style="color: #fb4141">Disadvantages:</p>
+						<ul>
+							<li> <i class="fas fa-minus-circle" style="color: #fb4141"> </i>Complex - because thhere is a high complexity involved, there are no clear rules for classifying emotions. Different annotators cand wield dfferent results.</li>						
+						</ul>
 					</div>
 				</div>
 			</div>
