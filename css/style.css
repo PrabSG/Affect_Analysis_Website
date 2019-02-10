@@ -501,8 +501,13 @@ hr {
 #footer .modal {
 	top: 40%
 }
+#footer .modal {
+}
 #footer .modal .modal-header {
 	background-color: black;
+}
+#footer .modal .modal-footer {
+	color: black;
 }
 #footer .modal-open .container-fluid, .modal-open  .container {
     -webkit-filter: blur(2px) grayscale(60%);
