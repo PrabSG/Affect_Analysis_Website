@@ -308,17 +308,19 @@
 				<div class="row">
 					<div class="col-md-6 text-center">
 						<br><br><br>
-						<i class="fas fa-network-wired"></i>
+						
 					</div>
 					<div class="col-md-6">
 						<h4>CNNs - Convolutional Neural Networks</h4>
 						<p>Convolution neural network (CNNs) is a class of deep neural networks comprised of two main stages: feature extraction and image classification. CNNs are commonly used in the domain of image processing and can be applied to the specific task of emotional recognition.
 						   CNNs utilise supervised learning techniques, therefore, a labeled data set is required to train them to perform a specific task. For the task of identifying emotions, a CNN could be trained using a dataset containing many different images of human faces, which have been classified into (one of 7 states or valence arousal) by psychologists. The accuracy and reliability of the trained neural network is heavily dependent upon the quality of the database used in training. </p>
-						<p>Essentially, as the name implies, CNNs use convolutions to fulfill their tasks. Those can be understood as “stages” of processing an image. We first start from a 2D image that our brains can easily understand. Then the neural networks starts transposing different parts of the image in higher dimensions (that oftentimes reach great values, even as far as 50D) that are known as hyperspace. This is called spatial analysis, as certain futures are evaluated at different “spaces” (dimensions).
-						   Each convolution, depending on the results from the previous one, updates itself. After reaching a certain number of convolutions, the networks simply gives the classification it made. A result from a convolution is obtained by attaching a different weight to different features. The weight is then updated by further convolutions (high values means that analysed feature is pronounced and is part of the image). Furthermore, the black box property means that we can’t specify or completely comprehend the “features” that the CNN will pick out.
-						   As it is trained, it will learn its own patterns and signals that (as a machine) it would notice which may not necessarily be the same markers that we as humans use for emotion recognition.</p>
-
 					</div>
+				</div>
+				
+				<div class="row">
+					<p>Essentially, as the name implies, CNNs use convolutions to fulfill their tasks. Those can be understood as “stages” of processing an image. We first start from a 2D image that our brains can easily understand. Then the neural networks starts transposing different parts of the image in higher dimensions (that oftentimes reach great values, even as far as 50D) that are known as hyperspace. This is called spatial analysis, as certain futures are evaluated at different “spaces” (dimensions).
+					   Each convolution, depending on the results from the previous one, updates itself. After reaching a certain number of convolutions, the networks simply gives the classification it made. A result from a convolution is obtained by attaching a different weight to different features. The weight is then updated by further convolutions (high values means that analysed feature is pronounced and is part of the image). Furthermore, the black box property means that we can’t specify or completely comprehend the “features” that the CNN will pick out.
+					   As it is trained, it will learn its own patterns and signals that (as a machine) it would notice which may not necessarily be the same markers that we as humans use for emotion recognition.</p>
 				</div>
 				
 				<div class="row">
@@ -328,21 +330,20 @@
 						   This is useful when dealing with data that comes in a specified sequence such as text or video. The cells themselves apply some mathematical functions to the input, dependent on the input state, and then produce both an output of the network and another state that can be fed back into itself for the next input.
 						   Alternatively, the cells can be “rolled out” so that there are several cells in sequence so that certain cells could apply functions that are slightly different, or have differently adjusted hyperparameters in their functions.
 						   For example, if a sentence was passed into a sequence of RNN cells, you might expect that some of the middle cells would be more likely to output verbs, and the opposite for the last ones as its unlikely to end a sentence in a verb.</p>
-						<p>Furthemore, these cells can be stacked ontop of eachother allowing for a second round of data processing to be done that may be looking at a different aspect of the data. This would also carry its own input state so that there would be several input/output states used.
-						   This approach somewhat mimics the parallel processing approach used in CNNs when they utilise several layers to detect a different part of input data.</p>
 					</div>
 					<div class="col-md-6 text-center">
-						<br><br><br>
-						<i class="fas fa-network-wired"></i>
+						<br><br><br><br><br>
+						<img src="img/rnns.png" class="img-responsive">
 					</div>
 				</div>
 				
 				<div class="row">
+					<p>Furthemore, these cells can be stacked ontop of eachother allowing for a second round of data processing to be done that may be looking at a different aspect of the data. This would also carry its own input state so that there would be several input/output states used.
+					   This approach somewhat mimics the parallel processing approach used in CNNs when they utilise several layers to detect a different part of input data.</p>
 					<p>Within the realm of emotion recognition, both CNNs and RNNs are used for different purposes, but together to solve the ultimate goal of recognising and then assigning a specific value to facial expressions.
 					   We can also process not only images but whole videos. This is where the RNNs are used. The RNNs are specifically made for and used for handling temporal data, or when there needs to be some sort of short-term memory to process data and interpret it by also remembering what came before it.
 					   In a video (essentially a sequence of images) we can pick out some of the key frames of the video and . We don’t utilise every frame as there is a miniscule difference between every pair of neighbouring frames and processing all of them would result in wasted computational power and time. Then when the RNN calculates its output of what emotion it believes is being represented by the video, it utilises the sequence of frames before hand to see how the face was changing.
 					   For example, if the first processed frame was a neutral face, then the eyes started the widen, then in the next frame the mouth began to open, then the cheeks began to raise and tense, this sequence of actions could indicate that the person is happily surprised or excited. However, from those individual frames it may be much harder to realise that is the emotion that is being expressed. So in combination, the CNN works on the feature extraction of each frame, and the RNN interprets how that sequence of frames is connected to recognise an emotion.</p>
-
 				</div>
 			</div>
 		</section>
