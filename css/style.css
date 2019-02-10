@@ -483,6 +483,9 @@ hr {
 	padding: 15px 0;
 	text-align: center;
 }
+#footer h1 {
+	color: black;
+}
 #footer h3 {
 	color: white;
 	font-size: 15px;
