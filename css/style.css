@@ -176,9 +176,11 @@ hr {
 .section-title h2, .section-title.center h2 {
 	margin-bottom: 30px;
 }
-
 .space {
 	margin-top: 40px;
+}
+.text {
+	margin-left: 18px;
 }
 
 /* Landing Page Elements: */
@@ -340,7 +342,7 @@ hr {
 	background-attachment: fixed;
 }
 #introduction .introduction-text {
-	margin-left: 10px;
+	margin-left: px;
 }
 #introduction h2 {
 	color: white;

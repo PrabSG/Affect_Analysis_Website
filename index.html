@@ -108,25 +108,25 @@
 				</div>
 				
 				<div class="row">	
-					<p>In the research area of emotion recognition, there are several methods of classifying the data obtained through analysing different images that depict persons showing emotions.</p>
+					<div class="text">
+						<p>In the research area of emotion recognition, there are several methods of classifying the data obtained through analysing different images that depict persons showing emotions.</p>
+					</div>
 				</div>
 				
 				<div class="row">
 					<div class="col-md-6">
-					<div class="introduction-text">
-							<h4>The Seven Basic Emotions:</h4>
-							<p>One of the most commonly used framework is classifying the respective image or set of frames according to the 7 basic affects. These are: happiness, anger, fear, disgust, sadness, surprise and the neutral state. However, classifying emotions is sometimes a difficult task, since a very particular emotion could not be as simple in order to be classified using only these 7 ‘buckets'.
-								
-							<p style="color: #8cf966">Advantages:</p>
-							<li> <i class="fas fa-plus-circle" style="color: #8cf966"> </i>Simple - this enables a fast classification of many images in a short time.</li>
-							<li> <i class="fas fa-plus-circle" style="color: #8cf966"> </i>Low Numbers - this enables neural networks to better sort images, making training more effective and increasing chances of succes.</li>
+						<h4>The Seven Basic Emotions:</h4>
+						<p>One of the most commonly used framework is classifying the respective image or set of frames according to the 7 basic affects. These are: happiness, anger, fear, disgust, sadness, surprise and the neutral state. However, classifying emotions is sometimes a difficult task, since a very particular emotion could not be as simple in order to be classified using only these 7 ‘buckets'.
+					
+						<p style="color: #8cf966">Advantages:</p>
+						<li> <i class="fas fa-plus-circle" style="color: #8cf966"> </i>Simple - this enables a fast classification of many images in a short time.</li>
+						<li> <i class="fas fa-plus-circle" style="color: #8cf966"> </i>Low Numbers - this enables neural networks to better sort images, making training more effective and increasing chances of succes.</li>
 							
-							<p style="color: #fb4141">Disadvantages:</p>
+						<p style="color: #fb4141">Disadvantages:</p>
 							
-							<li> <i class="fas fa-minus-circle" style="color: #fb4141"> </i>Not Very Representative of Real Life - There are many cases in which humans don't feel one emotion - you can be surprised and happy at the same time.</li>
-							<li> <i class="fas fa-minus-circle" style="color: #fb4141"> </i>Simple - Human emotions vary in intesity, and this method doesn't account for this aspect</li>
-							<li> <i class="fas fa-minus-circle" style="color: #fb4141"> </i>Surprise and Fear can often be confused with one another, different annotators having different opinions about what the perceived emotion is.</li>
-						</div>
+						<li> <i class="fas fa-minus-circle" style="color: #fb4141"> </i>Not Very Representative of Real Life - There are many cases in which humans don't feel one emotion - you can be surprised and happy at the same time.</li>
+						<li> <i class="fas fa-minus-circle" style="color: #fb4141"> </i>Simple - Human emotions vary in intesity, and this method doesn't account for this aspect</li>
+						<li> <i class="fas fa-minus-circle" style="color: #fb4141"> </i>Surprise and Fear can often be confused with one another, different annotators having different opinions about what different emotions from different individuals represent.</li>
 					</div>
 				</div>
 
@@ -142,9 +142,13 @@
 					<h2>Why Affect Theory?</h2>
 					<hr>
 				</div>
-
-				<p>Emotional recognition and generation are important areas of research: a system capable of reliably identifying the emotional state of an individual would open the door to many different technological advancements.</p>
-				<p>Example applications of this research:</p>
+				
+				<div class ="row">
+					<div class="text">
+						<p>Emotional recognition and generation are important areas of research: a system capable of reliably identifying the emotional state of an individual would open the door to many different technological advancements.</p>
+						<p>Example applications of this research:</p>
+					</div>
+				</div>
 
 				<div class="row">
 					<div class="col-md-6">
@@ -320,9 +324,11 @@
 				</div>
 				
 				<div class="row">
-					<p>Essentially, as the name implies, CNNs use convolutions to fulfill their tasks. Those can be understood as “stages” of processing an image. We first start from a 2D image that our brains can easily understand. Then the neural networks starts transposing different parts of the image in higher dimensions (that oftentimes reach great values, even as far as 50D) that are known as hyperspace. This is called spatial analysis, as certain futures are evaluated at different “spaces” (dimensions).
-					   Each convolution, depending on the results from the previous one, updates itself. After reaching a certain number of convolutions, the networks simply gives the classification it made. A result from a convolution is obtained by attaching a different weight to different features. The weight is then updated by further convolutions (high values means that analysed feature is pronounced and is part of the image). Furthermore, the black box property means that we can’t specify or completely comprehend the “features” that the CNN will pick out.
-					   As it is trained, it will learn its own patterns and signals that (as a machine) it would notice which may not necessarily be the same markers that we as humans use for emotion recognition.</p>
+					<div class="text">
+						<p>Essentially, as the name implies, CNNs use convolutions to fulfill their tasks. Those can be understood as “stages” of processing an image. We first start from a 2D image that our brains can easily understand. Then the neural networks starts transposing different parts of the image in higher dimensions (that oftentimes reach great values, even as far as 50D) that are known as hyperspace. This is called spatial analysis, as certain futures are evaluated at different “spaces” (dimensions).
+						Each convolution, depending on the results from the previous one, updates itself. After reaching a certain number of convolutions, the networks simply gives the classification it made. A result from a convolution is obtained by attaching a different weight to different features. The weight is then updated by further convolutions (high values means that analysed feature is pronounced and is part of the image). Furthermore, the black box property means that we can’t specify or completely comprehend the “features” that the CNN will pick out.
+						As it is trained, it will learn its own patterns and signals that (as a machine) it would notice which may not necessarily be the same markers that we as humans use for emotion recognition.</p>
+					</div>
 				</div>
 				
 				<div class="row">
@@ -340,12 +346,14 @@
 				</div>
 				
 				<div class="row">
-					<p>Furthemore, these cells can be stacked ontop of eachother allowing for a second round of data processing to be done that may be looking at a different aspect of the data. This would also carry its own input state so that there would be several input/output states used.
-					   This approach somewhat mimics the parallel processing approach used in CNNs when they utilise several layers to detect a different part of input data.</p>
-					<p>Within the realm of emotion recognition, both CNNs and RNNs are used for different purposes, but together to solve the ultimate goal of recognising and then assigning a specific value to facial expressions.
-					   We can also process not only images but whole videos. This is where the RNNs are used. The RNNs are specifically made for and used for handling temporal data, or when there needs to be some sort of short-term memory to process data and interpret it by also remembering what came before it.
-					   In a video (essentially a sequence of images) we can pick out some of the key frames of the video and . We don’t utilise every frame as there is a miniscule difference between every pair of neighbouring frames and processing all of them would result in wasted computational power and time. Then when the RNN calculates its output of what emotion it believes is being represented by the video, it utilises the sequence of frames before hand to see how the face was changing.
-					   For example, if the first processed frame was a neutral face, then the eyes started the widen, then in the next frame the mouth began to open, then the cheeks began to raise and tense, this sequence of actions could indicate that the person is happily surprised or excited. However, from those individual frames it may be much harder to realise that is the emotion that is being expressed. So in combination, the CNN works on the feature extraction of each frame, and the RNN interprets how that sequence of frames is connected to recognise an emotion.</p>
+					<div class="text">
+						<p>Furthemore, these cells can be stacked ontop of eachother allowing for a second round of data processing to be done that may be looking at a different aspect of the data. This would also carry its own input state so that there would be several input/output states used.
+						This approach somewhat mimics the parallel processing approach used in CNNs when they utilise several layers to detect a different part of input data.</p>
+						<p>Within the realm of emotion recognition, both CNNs and RNNs are used for different purposes, but together to solve the ultimate goal of recognising and then assigning a specific value to facial expressions.
+						We can also process not only images but whole videos. This is where the RNNs are used. The RNNs are specifically made for and used for handling temporal data, or when there needs to be some sort of short-term memory to process data and interpret it by also remembering what came before it.
+						In a video (essentially a sequence of images) we can pick out some of the key frames of the video and . We don’t utilise every frame as there is a miniscule difference between every pair of neighbouring frames and processing all of them would result in wasted computational power and time. Then when the RNN calculates its output of what emotion it believes is being represented by the video, it utilises the sequence of frames before hand to see how the face was changing.
+						For example, if the first processed frame was a neutral face, then the eyes started the widen, then in the next frame the mouth began to open, then the cheeks began to raise and tense, this sequence of actions could indicate that the person is happily surprised or excited. However, from those individual frames it may be much harder to realise that is the emotion that is being expressed. So in combination, the CNN works on the feature extraction of each frame, and the RNN interprets how that sequence of frames is connected to recognise an emotion.</p>
+					</div>
 				</div>
 				
 				<div class="section-title text-center center">
