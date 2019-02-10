@@ -509,7 +509,9 @@ hr {
 #footer .modal {
 }
 #footer .modal .modal-header {
-	background-color: black;
+	color: white;
+	border-radius: 5px;
+	background-color: grey;
 }
 #footer .modal .modal-footer {
 	color: black;
