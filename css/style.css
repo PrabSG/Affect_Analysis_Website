@@ -73,8 +73,6 @@ ul, ol {
 }
 ul, ol {
 	padding: 0;
-	webkit-padding: 0;
-	moz-padding: 0;
 }
 hr {
 	height: 8px;
@@ -341,9 +339,6 @@ hr {
 	background-size: cover;
 	background-attachment: fixed;
 }
-#introduction .introduction-text {
-	margin-left: px;
-}
 #introduction h2 {
 	color: white;
 }
@@ -388,9 +383,6 @@ hr {
 	background-size: cover;
 	background-attachment: fixed;
 }
-#benefits .benefits-text {
-	margin-left: 10 px;
-}
 #benefits h4 {
 	font-size: 20px;
 }
@@ -415,9 +407,6 @@ hr {
 }
 #databases .data {
 	padding: 20px 10px;
-}
-#databases .databases-text {
-	margin-left: 10px;
 }
 #databases h2 {
 	color: white;
@@ -456,9 +445,6 @@ hr {
 	background: #f6f6f6;
 	background-size: cover;
 	background-attachment: fixed;
-}
-#howitworks .howitworks-text {
-	margin-left: 10 px;
 }
 #howitworks h4 {
 	font-size: 20px;
