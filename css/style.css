@@ -334,6 +334,14 @@ hr {
 	height: 9rem;
 }
 }
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
 
 /* Gallery */
 
@@ -563,10 +571,10 @@ hr {
 	margin-bottom: 30px;
 	font-size: 16px;
 }
-#about i.fas {
+#about i.fab {
 	padding: 12px 0;
-	font-size: 48px;
-	color: #f0bb3d;
+	font-size: 20px;
+	color: #0cb;
 }
 #about .count {
 	font-size: 20px;
