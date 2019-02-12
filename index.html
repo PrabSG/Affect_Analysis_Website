@@ -359,8 +359,10 @@
 						<p>The existing limitations is the reason why Dimitrios Kollias and his colleagues started the development of the Aff-Wild, a dataset which consists of more than 30 hours of recordings from 298 videos. The main goal of the new dataset was to gather frames reflecting spontaneous behaviour of the subjects. They were captured from a series of YouTube videos, in which people react to a variety of situations,
 						for instance an unexpected scenario in a film, or eating something that they have never eaten before. An important feature of the Aff-Wild is represented by the different cultural backgrounds of the subjects as well as the diverse illumination and occlusion conditions. Another improvement brought by the Aff-Wild is the [-1, 1] interval, in which the valence and arousal can range in a continuous manner, the annotation process being carried out by 8 annotators. As an overview, the Aff-Wild database provides a very powerful methodology for analysing not only static emotional states of the subjects, but also fast transitions of the facial expressions. </p>
 						
-						<p>Aff-Wild surpasses previous databases, as some parts of it have been also annotated for the seven basic expressions and action units. This makes the Aff-Wild the first really big dataset, in-the-wild that is also anotated for all the three described affect categories (seven basic emotions, action units, valence-arousal space).
-						<p>Want a more in depth read about this dataset? You can read Dimitrios and his colleagues' paper on this: <a href="https://arxiv.org/pdf/1811.07771.pdf">Deep Affect Prediction in-the-wild: Aff-Wild Database and Challenge, Deep Architectures, and Beyond</a></p>
+						<p>Aff-Wild surpasses previous databases, as some parts of it have been also annotated for the seven basic expressions and action units. This makes the Aff-Wild the first really big dataset, in-the-wild that is also anotated for all the three described affect categories (seven basic emotions, action units, valence-arousal space).</p>
+						<p>"When it comes to dimensional emotion recognition, there exists great variability between different databases, especially those containing emotions in-the-wild. In particular, the annotators and the range of the annotations are different and the labels can be either discrete or continuous. To tackle the problems caused by this variability, we take advantage of the fact that the Aff-Wild is a powerful database
+						that can be exploited for learning features, which may then be used as priors for dimensional emotion recognition" (information taken from the paper of the database, linked below).</p>
+						<p>Want a more in depth read about this dataset? You can read Dimitrios and his colleagues' paper on this: <a href="https://arxiv.org/pdf/1804.10938.pdf">Deep Affect Prediction in-the-wild: Aff-Wild Database and Challenge, Deep Architectures, and Beyond</a></p>
 
 					</div>
 				</div>
@@ -368,7 +370,25 @@
 				<div class="row">
 					<div class="text">		
 						<h4>But How Was Aff-Wild Used?</h4>
-						<p>A Challenge was organised to see diferent image recognition algorithms. The training set of the Aff-Wild database has 1,008,650 frames (that were used for training networks) while the test set consists of 215,450 frames. In total, ten different research groups downloaded the Aff-Wild database. Six of them made experiments and submitted their results to the workshop portal. Based on the performance they obtained on the test data, three of them were selected to present their results to the workshop. Comparated to a lab conditions database, the results were expectedly lower.</p>
+						<p>A Challenge was organised to see diferent image recognition algorithms. The training set of the Aff-Wild database has 1,008,650 frames (that were used for training networks) while the test set consists of 215,450 frames. In total, ten different research groups downloaded the Aff-Wild database. Six of them made experiments and submitted their results to the workshop portal. Based on the performance they obtained on the test data, three of them were selected to present their results to the workshop. Comparated to a lab conditions database, the results were lower.</p>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-6">
+						<h4>Creating An Even Better Architecture</h4>
+						<p>The results were promising, but there was room left for improvement. This is why Dimitrios and his colleagues' also created a database, AffWildNet that underwent the same challenge. More details about this are described in <a class="page-scroll" href="#howitworks">How It Works Section.</a> The AffWildNet is a CNN-RNN network. This architecture managed to outperform the other architectures developed in the challenge, because of the network design and the network training.
+						The architecture was then fine tuned to benefit from the learning features of Aff-Wild.</p>
+						
+						<p>You can see in the tables on the right that AffWildNet clearly outperforms its' counterparts. The criteria (that was demanded in the Aff-Wild Challenge) was the CCC (the Concordance Correlation Coefficient), which is widely used for measuring performance of emotion recognition architectures. CCC penalises proportionally any discrepancies between the annotated values and the prediction made by the architectures (note, this is a simplified explanation of the whole process).</p>                         
+					</div>
+					
+					<div class="col-md-6 text-center">
+						<img src="img/challengetable.png" class="img-responsive text-center" alt="Aff-Wild Challenge Results">
+						<p>The results obtained by the finalist teams in the Aff-Wild Challenge</p>
+						<img src="img/affwildnet.png" class="img-responsive text-center" alt="AffWildNet Performance Against Pre-Trained Networks">
+						<p>AffWildNet Performance Against Pre-Trained Networks and VGG-Face-LSTM architecture</p>
+						<p>Source: <a href="https://arxiv.org/pdf/1804.10938.pdf">Deep Affect Prediction in-the-wild: Aff-Wild Database and Challenge, Deep Architectures, and Beyond</a></p>
 					</div>
 				</div>
 
@@ -380,7 +400,7 @@
 		<section id="howitworks">
 			<div class="container">
 				<div class="section-title text-center center">
-					<h2>How Image Recognition and Generation Works</h2>
+					<h2>How It Works</h2>
 					<hr>
 				</div>
 
