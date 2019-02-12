@@ -381,7 +381,7 @@ hr {
 	padding: .3rem;
 	font-size: 1.2rem;
 	position: absolute;
-	bottom: 0; 
+	bottom: 0;
 	width: 100%;
 	transition: 1s 1s opacity;
 }
@@ -572,6 +572,24 @@ hr {
 	font-size: 20px;
 	font-weight: 600;
 	color: white;
+}
+
+/* References Section */
+
+#reference {
+	padding: 140px 0;
+	background: white;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#reference h3 {
+	color: #f0bb3d;
+}
+
+#reference h4 {
+	color: grey;
+	font-weight: bold;
 }
 
 /* Footer Elements: */

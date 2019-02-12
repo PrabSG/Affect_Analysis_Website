@@ -47,7 +47,7 @@
 						<li> <a class="page-scroll" href="#databases">Databases</a> </li>
 						<li> <a class="page-scroll" href="#howitworks">How It Works</a> </li>
 						<li> <a class="page-scroll" href="#about">About</a> </li>
-						<li> <a class="page-scroll" href="#refs">Refferences</a> </li>
+						<li> <a class="page-scroll" href="#reference">Refferences</a> </li>
 					</ul>
 				</div>
 			</div>
@@ -63,9 +63,9 @@
 				</div>
 				<div class="split right">
 					<h1>Emotion Recognition & Generation</h1>
-					
-					
-					
+
+
+
 					<a class="page-scroll" href="#introduction">
 						<div class="arrow page-scroll">
 							<span> </span>
@@ -111,53 +111,53 @@
 					<h2>Classifying Emotions</h2>
 					<hr>
 				</div>
-				
-				<div class="row">	
+
+				<div class="row">
 					<div class="text">
 						<p>In the research area of emotion recognition, there are several methods of classifying the data obtained through analysing different images that depict persons showing emotions.</p>
 					</div>
 				</div>
-				
+
 				<div class="row">
 					<div class="col-md-6">
 
 						<h4>The Seven Basic Emotions:</h4>
 						<p>One of the most commonly used frameworks is classifying the respective image or set of frames according to the 7 basic affects. These are: happiness, anger, fear, disgust, sadness, surprise and the neutral state. However, classifying emotions is sometimes a difficult task, since a very particular emotion could not be as simple in order to be classified using only these 7 ‘buckets'.
-					
+
 						<p style="color: #8cf966">Advantages:</p>
 						<ul>
 							<li> <i class="fas fa-plus-circle" style="color: #8cf966"> </i>Simple (only seven categories) - as the values are discrete (distinct from one another), it makes the process of classifying an image easier in some case, as it is easy to eliminate cases (a sad face is not similar to a happy one, therefore the query is faster).</li>
 						</ul>
-						
+
 						<p style="color: #fb4141">Disadvantages:</p>
 						<ul>
 							<li> <i class="fas fa-minus-circle" style="color: #fb4141"> </i>Not Very Representative of Real Life - there are many cases in which humans don't feel one emotion - you can be surprised and happy at the same time.</li>
 							<li> <i class="fas fa-minus-circle" style="color: #fb4141"> </i>Simple - human emotions vary in intesity, and this method doesn't account for this aspect</li>
 							<li> <i class="fas fa-minus-circle" style="color: #fb4141"> </i>Surprise and Fear can often be confused with one another, different annotators having various interpretations about what emotion a specific facial expression represents.</li>
 						</ul>
-						
+
 					</div>
-					
+
 					<!-- Gallery Elements: -->
-					
+
 					<div class="col-md-6">
 						<div class="slideshow">
-						
+
 						<figure>
 							<img src="img/neutralstate.jpg" alt="Neutral State">
 							<figcaption>Neutral State</figcaption>
 						</figure>
-					
+
 						<figure>
 							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/green-glass-bottle.jpg" alt>
 							<figcaption>Green Glass Bottle</figcaption>
 						</figure>
-					
+
 						<figure>
 							<img src="img/happystate.jpg" alt="Happy State">
 							<figcaption>Happy State</figcaption>
 						</figure>
-					
+
 						<figure>
 							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/crystal-skull-vodka.jpg" alt>
 							<figcaption>Crystal Skull Vodka</figcaption>
@@ -165,69 +165,69 @@
 						</div>
 
 						<div class="slideshow">
-						
+
 						<figure>
 							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/crystal-skull-vodka.jpg" alt>
 							<figcaption>Crystal Skull Vodka</figcaption>
 						</figure>
-						
+
 						<figure>
 							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/green-glass-bottle.jpg" alt>
 							<figcaption>Green Glass Bottle</figcaption>
 						</figure>
-						
+
 						<figure>
 							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/rose-red-wine.jpg" alt="rose-red-wine">
 							<figcaption>Rose Red Wine</figcaption>
 						</figure>
 						</div>
-					
+
 					</div>
-					
+
 					<div class="col-md-6 text-center">
 						<p>The Seven Basic Emotions</p>
 						<p>PS: Click one to see the presented state</p>
 					</div>
-					
+
 				</div>
-				
+
 				<br>
-				
+
 				<div class="row">
 					<div class="text">
 						<h4>Compound Emotions:</h4>
 						<p>An evolution from the '7 basic emotions' that has become more and more used in the last years is 'compound emotions'. This essentially unites two emotions into a set, such as happy-surprised. Although it is an improvement, the drawbacks of the 'seven basic emotions' system are found here as well.</p>
 					</div>
 				</div>
-				
+
 				<div class="row">
 					<div class="text">
 						<h4>Action Units:</h4>
 						<p>A way of categorizing and recognising emotions is through measuring the muscle movement that they determine, a parameter called 'action units'. Each muscular fiber is analysed (e.g.the elevation of one eyebrow and the descent of the other one), also taking into account the amount of movement of each muscle, thus evaluating intensity. The rules used for this classification are deterministic: that is,the "activation" of some muscles and the lack of contraction in others can indicate a specific and definite emotion.</p>
 					</div>
 				</div>
-				
+
 				<div class="row">
 					<div class="col-md-6 text-center">
 						<br>
 						<img src="img/valencearousal.png" class="img-responsive text-center" alt="The Valence Arousal 2D Wheel" style="padding-left: 30px;">
 						<p>The 2D Emotion Wheel</p>
-						<p>Source: Deep Affect Prediction in-the-wild: Aff-Wild Database and Challenge, Deep Architectures, and Beyond</p>
+						<p>Source: <a href="https://arxiv.org/pdf/1804.10938.pdf" target="_blank"> Deep Affect Prediction in-the-wild: Aff-Wild Database and Challenge, Deep Architectures, and Beyond </a> </p>
 					</div>
-					
+
 					<div class="col-md-6">
 						<h4>The Valence-Arousal Space</h4>
 						<p>This is another way of classifying emotions, that uses a regressive approach in their measurement. This means that emotions are attributed a value, which can be floating, (like being 1.5 happy), making emotion classification even more realistic. Valence evaluates whether(and to what extent) an emotion is positive or negative, while arousal evaluates if the emotion is active.
-						
+
 						<p style="color: #8cf966">Advantages:</p>
 						<ul>
 							<li> <i class="fas fa-plus-circle" style="color: #8cf966"> </i>Complex - this enables classifying more general feelings, that comprise multiple emotions.</li>
 							<li> <i class="fas fa-plus-circle" style="color: #8cf966"> </i>Realistic - it is the best representation that we have for affects, as it is allows us to accurately classify natural behaviour.</li>
 						</ul>
-						
+
 						<p style="color: #fb4141">Disadvantages:</p>
 						<ul>
-							<li> <i class="fas fa-minus-circle" style="color: #fb4141"> </i>Subjective - because now affects are given continuous values, different annotators cand wield dfferent results (one sees an intesity of 0.6 while the other sees an intensity of 0.3).</li>						
+							<li> <i class="fas fa-minus-circle" style="color: #fb4141"> </i>Subjective - because now affects are given continuous values, different annotators cand wield dfferent results (one sees an intesity of 0.6 while the other sees an intensity of 0.3).</li>
 						</ul>
 					</div>
 				</div>
@@ -243,7 +243,7 @@
 					<h2>Why 'Affect Theory'?</h2>
 					<hr>
 				</div>
-				
+
 				<div class ="row">
 					<div class="text">
 						<p>Emotion recognition and generation are important areas of research: a system capable of reliably identifying the emotional state of an individual would open the door to many different technological advancements.</p>
@@ -350,15 +350,15 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<br>
-				
+
 				<div class="row">
-					<div class="text">		
+					<div class="text">
 						<h4>The Aff-Wild</h4>
 						<p>The existing limitations is the reason why Dimitrios Kollias and his colleagues started the development of the Aff-Wild, a dataset which consists of more than 30 hours of recordings from 298 videos. The main goal of the new dataset was to gather frames reflecting spontaneous behaviour of the subjects. They were captured from a series of YouTube videos, in which people react to a variety of situations,
 						for instance an unexpected scenario in a film, or eating something that they have never eaten before. An important feature of the Aff-Wild is represented by the different cultural backgrounds of the subjects as well as the diverse illumination and occlusion conditions. Another improvement brought by the Aff-Wild is the [-1, 1] interval, in which the valence and arousal can range in a continuous manner, the annotation process being carried out by 8 annotators. As an overview, the Aff-Wild database provides a very powerful methodology for analysing not only static emotional states of the subjects, but also fast transitions of the facial expressions. </p>
-						
+
 						<p>Aff-Wild surpasses previous databases, as some parts of it have been also annotated for the seven basic expressions and action units. This makes the Aff-Wild the first really big dataset, in-the-wild that is also anotated for all the three described affect categories (seven basic emotions, action units, valence-arousal space).</p>
 						<p>"When it comes to dimensional emotion recognition, there exists great variability between different databases, especially those containing emotions in-the-wild. In particular, the annotators and the range of the annotations are different and the labels can be either discrete or continuous. To tackle the problems caused by this variability, we take advantage of the fact that the Aff-Wild is a powerful database
 						that can be exploited for learning features, which may then be used as priors for dimensional emotion recognition" (information taken from the paper of the database, linked below).</p>
@@ -368,21 +368,21 @@
 				</div>
 
 				<div class="row">
-					<div class="text">		
+					<div class="text">
 						<h4>But How Was Aff-Wild Used?</h4>
 						<p>A Challenge was organised to see diferent image recognition algorithms. The training set of the Aff-Wild database has 1,008,650 frames (that were used for training networks) while the test set consists of 215,450 frames. In total, ten different research groups downloaded the Aff-Wild database. Six of them made experiments and submitted their results to the workshop portal. Based on the performance they obtained on the test data, three of them were selected to present their results to the workshop. Comparated to a lab conditions database, the results were lower.</p>
 					</div>
 				</div>
-				
+
 				<div class="row">
 					<div class="col-md-6">
 						<h4>Creating An Even Better Architecture</h4>
 						<p>The results were promising, but there was room left for improvement. This is why Dimitrios and his colleagues' also created a database, AffWildNet that underwent the same challenge. More details about this are described in <a class="page-scroll" href="#howitworks">How It Works Section.</a> The AffWildNet is a CNN-RNN network. This architecture managed to outperform the other architectures developed in the challenge, because of the network design and the network training.
 						The architecture was then fine tuned to benefit from the learning features of Aff-Wild.</p>
-						
-						<p>You can see in the tables on the right that AffWildNet clearly outperforms its' counterparts. The criteria (that was demanded in the Aff-Wild Challenge) was the CCC (the Concordance Correlation Coefficient), which is widely used for measuring performance of emotion recognition architectures. CCC penalises proportionally any discrepancies between the annotated values and the prediction made by the architectures (note, this is a simplified explanation of the whole process).</p>                         
+
+						<p>You can see in the tables on the right that AffWildNet clearly outperforms its' counterparts. The criteria (that was demanded in the Aff-Wild Challenge) was the CCC (the Concordance Correlation Coefficient), which is widely used for measuring performance of emotion recognition architectures. CCC penalises proportionally any discrepancies between the annotated values and the prediction made by the architectures (note, this is a simplified explanation of the whole process).</p>
 					</div>
-					
+
 					<div class="col-md-6 text-center">
 						<img src="img/challengetable.png" class="img-responsive text-center" alt="Aff-Wild Challenge Results">
 						<p>The results obtained by the finalist teams in the Aff-Wild Challenge</p>
@@ -391,29 +391,29 @@
 						<p>Source: <a href="https://arxiv.org/pdf/1804.10938.pdf">Deep Affect Prediction in-the-wild: Aff-Wild Database and Challenge, Deep Architectures, and Beyond</a></p>
 					</div>
 				</div>
-				
+
 				<div class="section-title text-center center">
-					<h2>The Wall Called Multitask</h2>
+					<h2>The Wall Called Multi-Task</h2>
 					<hr>
 				</div>
-				
+
 				<div class="row">
-					<div class="text">		
+					<div class="text">
 						<p>A strong question that relates to databases is how can we best combine different criterias. How can we create an architecture that is able to recognise the seven basic emotion but also be able to scale frames on the valence-arousal space? The same question applies for image generation. The appearance of Aff-Wild facilitated the exploration of those questions, as it incorporates the three presented criterias.</p>
 					</div>
 				</div>
-				
+
 				<div class="row">
-				
-					
+
+
 					<div class="col-md-6">
 						<h4>Creating A Multi-Task Architecture</h4>
-						<p>This machine learning paradigm (The Multi-Task Learning, or simply MTL) provides an opportunity to find similarities between a number of different tasks and significantly improve the performance of a single task. his is possible due to the ability to include other tasks (which are linked to the current one) in the process of training the data. Dimitrios Kollias and his colleague contributed to solving the multi-task problem by the following means: first, by annotating a fraction of the Aff-Wild dataset in terms of the seven fundamental emotional states, and another fraction in terms of 8 action units.
+						<p>This machine learning paradigm (The Multi-Task Learning, or simply MTL) provides an opportunity to find similarities between a number of different tasks and significantly improve the performance of a single task. This is possible due to the ability to include other tasks (which are linked to the current one) in the process of training the data. Dimitrios Kollias and his colleague contributed to solving the multi-task problem by the following means: first, by annotating a fraction of the Aff-Wild dataset in terms of the seven fundamental emotional states, and another fraction in terms of 8 action units.
 						This provided a better overview on the fast changes between two emotion representations, highlighting the broad palette of emotions as well as the variability of behaviours. The second contribution was done through modifying and improving the existing so called ‘GAN' architecture (Generative Adversarial Network), so that it was possible to obtain realistic images of all subjects who show up in the Aff-Wild, as well as representations of new emotional states of the persons already in the database.</p>
-						
+
 						<p>More information about this can be found on the <a href="https://arxiv.org/pdf/1811.07771.pdf">A Multi-Task Learning & Generation Framework: Valence-Arousal, Action Units & Primary Expressions</a></p>
 					</div>
-						
+
 					<div class="col-md-6 text-center">
 						<br><br><br><br><br>
 						<i class="fas fa-tasks" style="font-size: 250px;"> </i>
@@ -499,7 +499,7 @@
 						<br><br><br>
 						<img src="img/rnns.png" class="img-responsive" alt="A RNN Diagram">
 						<p>This shows what the example of a basic RNN may look like. Here the network is 2 cells deep (hence it could be referred to a deep RNN), and is rolled out over a sequence of 6 cells.</p>
-						<p>Source: <a href="https://www.youtube.com/watch?v=u4alGiomYP4">Martin Gorner, TensorFlow and Deep Learning without a PhD, Lecture @ Google Cloud Next ’17</a></p>
+						<p>Source: <a href="https://www.youtube.com/watch?v=u4alGiomYP4" target="_blank">Martin Gorner, TensorFlow and Deep Learning without a PhD, Lecture @ Google Cloud Next ’17</a></p>
 					</div>
 				</div>
 
@@ -533,22 +533,80 @@
 		</section>
 
 		<!-- About Section -->
-		
+
 		<section id="about">
 			<div class="container">
-			
+
 				<div class="section-title text-center center">
 					<h2>About</h2>
 					<hr>
 				</div>
-				
+
 				<div class="row">
 					<div class="col-md-3 text-center">
-						<img src="img/dimitrios.jpg" class="img-circle" alt="Dimitrios Kollias" width="180" height="230"> 
+						<img src="img/dimitrios.jpg" class="img-circle" alt="Dimitrios Kollias" width="180" height="230">
 						<p>Dimitrios Kollias</p>
 					</div>
+          <br>
+					<div class="col-md-6">
+						<ul style="list-style-type: disc; font-style: italic;">
+							<li> <h4> Assistant Researcher / PhD Student </h4> </li>
+							<br>
+							<li> <h4> Department of Computing - Imperial College London, UK </h4> </li>
+							<br>
+							<li> <h4> dimitrios.kollias15@imperial.ac.uk </h4> </li>
+						</ul>
+					</div>
+			</div>
+
+		   <div class="row">
+				 <div class="col-md-15 text-center">
+				 <h2> Publications </h2>
+				 <br>
+				 <hr>
+			 </div>
+		 </div>
+
+		 <div class="row">
+			 <ul style="list-style-type: square;">
+       <li> <h3> <a href="https://arxiv.org/pdf/1804.10938.pdf" target="_blank"> Deep Affect Prediction in-the-wild: Aff-Wild Database and Challenge,
+Deep Architectures, and Beyond </a> </h3> </li>
+		   <li> <h3> <a href="https://arxiv.org/pdf/1811.05027.pdf" target="_blank"> Generating faces for affect analysis </a> </h3> </li>
+			 <li> <h3> <a href="https://arxiv.org/pdf/1811.07771.pdf" target="_blank"> A Multi-Task Learning & Generation Framework: Valence-Arousal,
+Action Units & Primary Expressions </a> </h3> </li>
+			 <li> <h3> <a href="https://arxiv.org/pdf/1809.04359.pdf" target="_blank"> Training Deep Neural Networks with Different
+Datasets In-the-wild: The Emotion Recognition
+Paradigm </a> </h3> </li>
+			 </ul>
+		 </div>
+
+    </div>
+		</section>
+
+		<section id="reference">
+			<div class="container">
+				<div class="section-title text-center center">
+					<h2>References</h2>
+					<hr>
 				</div>
-				
+				<div calss="row">
+					<ul style="list-style-type: circle;">
+						<li><h4>D.Kollias, P.Tzirakis †, M.A.Nicolau, A.Papaioannou, G.Zhao, B.Schuller, I.Kotsia, S. Zafeiriou - </h4> <h3> <a href="https://arxiv.org/pdf/1804.10938.pdf" target="_blank"> Deep Affect Prediction in-the-wild: Aff-Wild Database and Challenge,
+Deep Architectures, and Beyond, 2019 </a> </h3> </li>
+            <br>
+            <li><h4>D.Kollias, S.Cheng, E. Ververas, I.Kotsia, S.Zafeiriou - </h4> <h3> <a href="https://arxiv.org/pdf/1811.05027.pdf" target="_blank"> Generating faces for affect analysis, 2018 </a> </h3> </li>
+            <br>
+						<li><h4>D.Kollias, S.Zafeiriou - </h4> <h3><a href="https://arxiv.org/pdf/1811.07771.pdf" target="_blank"> A Multi-Task Learning & Generation Framework: Valence-Arousal,
+Action Units & Primary Expressions, 2018 </a> </h3> </li>
+            <br>
+						<li><h4>D.Kollias, S.Zafeiriou - </h4> <h3><a href="https://arxiv.org/pdf/1809.04359.pdf" target="_blank"> Training Deep Neural Networks with Different
+Datasets In-the-wild: The Emotion Recognition Paradigm, 2018</a> </h3> </li>
+            <br>
+						<li> <h4> Martin Gorner -</h4> <h3> <a href="https://www.youtube.com/watch?v=u4alGiomYP4" target="_blank">TensorFlow and Deep Learning without a PhD, Lecture @ Google Cloud Next ’17 </a> </h3> </li>
+            <br>
+						<li> <h4> Wikipedia - </h4> <h3> <a href="https://en.wikipedia.org/wiki/Convolutional_neural_network" target="_blank">Convolutional Neural Networks </a> </h3> </li>
+					</ul>
+				</div>
 			</div>
 		</section>
 
@@ -573,7 +631,7 @@
 					</div>
 					<div class="col-md-6 col-sm-6">
 						<h3>Designed by Andrei Roman, Calin Biberea, Prabhjot Grewal, Daniel Kaye</h3>
-						<p>Click the icons to see some impressions of this topic from them (and just some contacts)</p>
+						<p>Click the icons to see some information about them and their contact details</p>
 					</div>
 					<div class="col-md-3 col-sm-6">
 						<div class="row">
