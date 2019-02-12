@@ -609,11 +609,16 @@ hr {
 }
 #footer .modal .modal-header {
 	color: white;
-	border-radius: 5px;
-	background-color: grey;
+	background-color: #323232;
+}
+#footer .modal .modal-title {
+	color: white;
 }
 #footer .modal .modal-footer {
 	color: black;
+}
+#footer .modal .close {
+	color: white;
 }
 #footer .modal-open .container-fluid, .modal-open  .container {
     -webkit-filter: blur(2px) grayscale(60%);
