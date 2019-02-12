@@ -432,7 +432,6 @@
 					<hr>
 				</div>
 
-
 				<div class="row">
 					<div class="col-md-6 text-center">
 						<br><br><br>
@@ -468,7 +467,7 @@
 
 				<div class="row">
 					<div class="col-md-6 text-center">
-						<br><br><br>
+						<br><br>
 						<img src="img/cnn.png" class="img-responsive" alt="A CNN Example">
 						<p>A Basic CNN Example</p>
 						<p>Source: Wikipedia, <a href="https://en.wikipedia.org/wiki/Convolutional_neural_network">Convolutional Neural Networks</a></p>
@@ -497,8 +496,10 @@
 						   For example, if a sentence was passed into a sequence of RNN cells, you might expect that some of the middle cells would be more likely to output verbs, and the opposite for the last ones, as it's unlikely to end a sentence in a verb.</p>
 					</div>
 					<div class="col-md-6 text-center">
-						<br><br><br><br><br>
+						<br><br><br>
 						<img src="img/rnns.png" class="img-responsive" alt="A RNN Diagram">
+						<p>This shows what the example of a basic RNN may look like. Here the network is 2 cells deep (hence it could be referred to a deep RNN), and is rolled out over a sequence of 6 cells.</p>
+						<p>Source: <a href="#waiting"> </a></p>
 					</div>
 				</div>
 
@@ -519,7 +520,18 @@
 				</div>
 
 				<div class="row">
+					<div class="text">
+						<p>While being able to recognise, classify and quantify emotions have some obvious applications and uses, the research field surrounding the generation of synthetic emotions onto faces is equally intriguing. It has applications in facial recognition and verification, emotion prediction, and for use in the entertainment industry.</p>
+						<p>When the generative model is training, one essential requirement is a large and varied dataset. There must be a significant number of different people in the data set, with as large a range of facial structures and features as possible. Therefore, when the model is trained, it learns how to map emotions onto new faces, as opposed to trying to morph the input face into the faces of the participants in the sample data. In his work on a generative model, they used the 4DFAB database a large 4-dimensional facial database. The data is 4 dimensional as it is comprised of 3-D images of faces showing different emotions, being joined together to form videos of people transitioning between emotions. To the best of his knowledge, the approach of using multi-dimensional data when synthesising face images has not been done before.</p>
+						<p>The extra physical dimension helps with the problems of pose variation and occlusion when trying to recognise and accurately track “in-the-wild” facial features. The variety also helps the model to differentiate between what patterns are representative of a person’s facial features, and what actually corresponds to a specific expressed emotion. Furthermore, by having video to train models on, the generative network can learn how to more accurately change an input image’s neutral expression into a specified emotion.</p>
+						<p>This has mainly been achieved through the development of Generative Adversarial Networks (GANs) by Ian Goodfellow et al in 2014. GANs have allowed for image analysis and transformation move away from a pixel-by-pixel approach, to a more feature and pattern-based system. Not only is this more general approach more effective when looking at unseen data and ‘subjects’, but it reveals a more semantic meaning behind what the network is doing to the image.</p>
+						<p>In short, Generative Adversarial Networks are two different models working against each other to improve each other. Here, one network is generating images with generated facial affects, which is then fed into a second network which is classifying emotions and trying to detect if the images are real. So the first network is trying to fool the second, and both learn and improve on how best to do that. This is the main concept behind GANs.</p>
 
+
+
+
+
+					</div>
 				</div>
 
 			</div>
