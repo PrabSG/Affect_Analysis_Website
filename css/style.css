@@ -113,7 +113,7 @@ hr {
 	padding: 0;
 	border-bottom: 0;
 	letter-spacing: 1px;
-	background: grey;
+	background: #323232;
 	text-transform: uppercase;
 }
 .navbar-custom .navbar-brand {
@@ -577,7 +577,7 @@ hr {
 /* Footer Elements: */
 
 #footer {
-	background: grey;
+	background: #323232;
 	color: white;
 	padding: 15px 0;
 	text-align: center;
