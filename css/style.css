@@ -337,14 +337,14 @@ hr {
 
 /* Gallery */
 
-#slideshow {
+.slideshow {
 	background-color: #000;
 	font-size: 0;
 	width: 60%;
 	margin: 0 auto;
 	box-shadow: 0 0 12px rgba(0,0,0,0.8);
 }
-#slideshow figure {
+.slideshow figure {
 	margin: 0;
 	width: 50%;
 	height: auto;
@@ -353,27 +353,27 @@ hr {
 	position: relative;
 	overflow: hidden;
 }
-#slideshow figure:hover {
+.slideshow figure:hover {
 	cursor: pointer;
 	z-index: 4;
 }
-#slideshow figure img {
+.slideshow figure img {
 	width: 100%;
 	height: auto;
 }
-#slideshow figure:nth-child(1) {
+.slideshow figure:nth-child(1) {
 	transform-origin: top left;
 }
-#slideshow figure:nth-child(2) {
+.slideshow figure:nth-child(2) {
 	transform-origin: top right;
 }
-#slideshow figure:nth-child(3) {
+.slideshow figure:nth-child(3) {
 	transform-origin: bottom left;
 }
-#slideshow figure:nth-child(4) {
+.slideshow figure:nth-child(4) {
 	transform-origin: bottom right;
 }
-#slideshow figure figcaption {
+.slideshow figure figcaption {
 	margin: 0;
 	opacity: 0;
 	background: rgba(0,0,0,0.3);
@@ -389,7 +389,7 @@ hr {
 	transform: scale(2);
 	z-index: 5;
 }
-#slideshow figure.expanded figcaption {
+.slideshow figure.expanded figcaption {
 	opacity: 1;
 }
 .full figure:not(.expanded) {
@@ -497,13 +497,19 @@ hr {
 	font-size: 48px;
 	color: #f0bb3d;
 }
-#databases .count {
+
+#databases .counter {
 	padding-top: 10px;
 	font-size: 20px;
 	font-weight: 600;
 	color: white;
 }
-
+#databases .counter .counter-value {
+	padding-bottom: 17px;
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
+}
 /* How It Works Section: */
 
 #howitworks {

@@ -1,4 +1,4 @@
-var images = document.querySelectorAll("#slideshow figure");
+var images = document.querySelectorAll(".slideshow figure");
 for(i=0; i < images.length; i++) {
   images[i].addEventListener('click',
   function(){
