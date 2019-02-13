@@ -311,7 +311,7 @@ hr {
         transform: rotate(45deg) translate(20px,20px);
     }
 }
-@media (max-width: 900px) {
+@media (max-width: 800px) {
 #header .split.left h1 {
 	font-size: 2rem;
 }
@@ -329,9 +329,9 @@ hr {
     animation: animate 2s infinite;
 }
 #header .button {
-	font-size: 2rem;
-	width: 18rem;
-	height: 9rem;
+	font-size: 1rem;
+	width: 15rem;
+	height: 5rem;
 }
 }
 #particles-js{
@@ -591,8 +591,11 @@ hr {
 	background-attachment: fixed;
 }
 
-#reference h3 {
-	color: #f0bb3d;
+#reference p {
+	color: black;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-size: 16px;
 }
 
 #reference h4 {
@@ -629,9 +632,7 @@ hr {
 	color: red;
 }
 #footer .modal {
-	top: 40%
-}
-#footer .modal {
+	top: 20%
 }
 #footer .modal .modal-header {
 	color: white;
@@ -653,8 +654,15 @@ hr {
 	-ms-user-select: blur(2px) grayscale(60%);
 	-o-user-select: blur(2px) grayscale(60%);
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 .hover-bg .hover-text {
 	padding: 20%;
 }
+#footer .modal {
+	top: 0%;
 }
+.modal-dialog {
+    width: 340px;
+}
+}
+

@@ -7,7 +7,12 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<title> Affect Analysis </title>
+
+		<!-- Favicon made by https://www.flaticon.com/authors/smalllikeart from www.flaticon.com -->
+		<meta property="og:image" content="img/favicon.png">
+		<link rel="icon" type="image/png" href="img/favicon.ico">
+		
+		<title>Affect Analysis</title>
 
 		<!-- Bootstrap 3 (better than 4) and Fontawesome imports -->
 
@@ -106,7 +111,7 @@
 				<br><br>
 
 				<div class="section-title text-center center">
-					<h2>Classifying Emotions</h2>
+					<h2>Affect Criterias</h2>
 					<hr>
 				</div>
 
@@ -142,22 +147,22 @@
 						<div class="slideshow">
 
 						<figure>
-							<img src="img/neutralstate.jpg" alt="Neutral State">
+							<img src="img/neutralstate.jpg" class="img-responsive" alt="Neutral State">
 							<figcaption>Neutral State</figcaption>
 						</figure>
 
 						<figure>
-							<img src="img/scaredstate.jpg" alt="Scared State">
+							<img src="img/scaredstate.jpg" class="img-responsive" alt="Scared State">
 							<figcaption>Scared State</figcaption>
 						</figure>
 
 						<figure>
-							<img src="img/sadstate.jpg" alt="Sad State">
+							<img src="img/sadstate.jpg" class="img-responsive" alt="Sad State">
 							<figcaption>Sad State</figcaption>
 						</figure>
 
 						<figure>
-							<img src="img/prajitstate.jpg" alt="Happy State">
+							<img src="img/prajitstate.jpg" class="img-responsive" alt="Happy State">
 							<figcaption>Happy State</figcaption>
 						</figure>
 						</div>
@@ -165,24 +170,24 @@
 						<div class="slideshow">
 
 						<figure>
-							<img src="img/disgustedstate.jpg" alt="Disgusted State">
+							<img src="img/disgustedstate.jpg" class="img-responsive" alt="Disgusted State">
 							<figcaption>Disgusted State</figcaption>
 						</figure>
 
 						<figure>
-							<img src="img/angerystate.jpg" alt="Angry State">
+							<img src="img/angerystate.jpg" class="img-responsive" alt="Angry State">
 							<figcaption>Angry State</figcaption>
 						</figure>
 
 						<figure>
-							<img src="img/surprisedstate.jpg" alt="Surprised State">
+							<img src="img/surprisedstate.jpg" class="img-responsive" alt="Surprised State">
 							<figcaption>Surprised State</figcaption>
 						</figure>
 						</div>
 						
 						<div class="text-center">
-							<p>The Seven Basic Emotions</p>
-							<p>PS: Click one to see the presented state</p>
+							<p>The Seven Basic Emotions
+							<br>PS: Click one to see the presented state</p>
 						</div>
 
 					</div>
@@ -208,8 +213,8 @@
 					<div class="col-md-6 text-center">
 						<br>
 						<img src="img/valencearousal.png" class="img-responsive text-center" alt="The Valence Arousal 2D Wheel" style="padding-left: 30px;">
-						<p>The 2D Emotion Wheel</p>
-						<p>Source: <a href="https://arxiv.org/pdf/1804.10938.pdf" target=_blank> Deep Affect Prediction in-the-wild: Aff-Wild Database and Challenge, Deep Architectures, and Beyond </a> </p>
+						<p>The 2D Emotion Wheel
+						<br>Source: <a href="https://arxiv.org/pdf/1804.10938.pdf" target=_blank> Deep Affect Prediction in-the-wild: Aff-Wild Database and Challenge, Deep Architectures, and Beyond </a> </p>
 					</div>
 
 					<div class="col-md-6">
@@ -237,7 +242,7 @@
 			<div class="container">
 
 				<div class="section-title text-center center">
-					<h2>Why 'Affect Theory'?</h2>
+					<h2>Applications</h2>
 					<hr>
 				</div>
 
@@ -384,8 +389,8 @@
 						<img src="img/challengetable.png" class="img-responsive text-center" alt="Aff-Wild Challenge Results">
 						<p>The results obtained by the finalist teams in the Aff-Wild Challenge</p>
 						<img src="img/affwildnet.png" class="img-responsive text-center" alt="AffWildNet Performance Against Pre-Trained Networks">
-						<p>AffWildNet Performance Against Pre-Trained Networks and VGG-Face-LSTM architecture</p>
-						<p>Source: <a href="https://arxiv.org/pdf/1804.10938.pdf" target=_blank>Deep Affect Prediction in-the-wild: Aff-Wild Database and Challenge, Deep Architectures, and Beyond</a></p>
+						<p>AffWildNet Performance Against Pre-Trained Networks<br>and VGG-Face-LSTM architecture
+						<br>Source: <a href="https://arxiv.org/pdf/1804.10938.pdf" target=_blank>Deep Affect Prediction in-the-wild: Aff-Wild Database and Challenge, Deep Architectures, and Beyond</a></p>
 					</div>
 				</div>
 
@@ -416,7 +421,23 @@
 						<i class="fas fa-tasks" style="font-size: 250px;"> </i>
 					</div>
 				</div>
-
+				
+				<div class="section-title text-center center">
+					<h2>Data Sharing</h2>
+					<hr>
+				</div>
+				
+				<div class="row">
+					<div class="text">
+						<h4>If we have so many databases, can't they train one another? We can, and while improving performance.</h4>
+						<p>Another novel procedure that Dimitrios took part in is the training of a DNN (Deep Neural Network), taking into account both the available training data set and some information extracted from similar networks trained with other relevant data sets; this information (learned knowledge) is included in an function, so that the network can have an improved performance when applied to the other data sets. In simple terms, the network is 'taught' by already trained networks, improving itself.</p>
+						<p>Individuals express their emotions differently: two people with the same emotion may have different facial expression. Due to the subjectivity of emotion classification, different annotators will classify emotional states of individuals differently from their colleagues.
+						As a result of these two facts, different data sets containing labeled emotional states are likely to possess different characteristics. Therefore, a DNN trained to classify one data set is unlikely to generalise over other data sets.</p>
+						<p>Dimitrios explored an approach to generalising which required training two separate deep convolutional-recurrent neural networks (CNN-RNN network). He trained a network on the original data to achieve the highest possible accuracy of emotional recognition. Then, he extracted features of the final RNN layer before clustering using the k-means algorithm into seven clusters, corresponding to the seven different emotional states. These clusters were then used in an extended function for training a different deep CNN-RNN on a different data set. The resulting network had an improved performance compared to other methods of achieving generalisation.</p>
+						
+						<p>Here is the full publication if you want to share an eye for it: <a href="https://arxiv.org/pdf/1809.04359.pdf" target=_blank>Training Deep Neural Networks with Different Datasets In-the-wild: The Emotion Recognition Paradigm</a></p>
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -458,7 +479,7 @@
 
 				<div class="section-title text-center center">
 					<h2>CNNs and RNNs</h2>
-					<h2>Recognition</h2>
+					<h2>Affect Recognition</h2>
 					<hr>
 				</div>
 
@@ -466,8 +487,8 @@
 					<div class="col-md-6 text-center">
 						<br><br>
 						<img src="img/cnn.png" class="img-responsive" alt="A CNN Example">
-						<p>A Basic CNN Example</p>
-						<p>Source: Wikipedia, <a href="https://en.wikipedia.org/wiki/Convolutional_neural_network" target=_blank>Convolutional Neural Networks</a></p>
+						<p>A Basic CNN Example
+						<br>Source: Wikipedia, <a href="https://en.wikipedia.org/wiki/Convolutional_neural_network" target=_blank>Convolutional Neural Networks</a></p>
 					</div>
 					<div class="col-md-6">
 						<h4>CNNs - Convolutional Neural Networks</h4>
@@ -495,8 +516,8 @@
 					<div class="col-md-6 text-center">
 						<br><br><br>
 						<img src="img/rnns.png" class="img-responsive" alt="A RNN Diagram">
-						<p>This shows what the example of a basic RNN may look like. Here the network is 2 cells deep (hence it could be referred to a deep RNN), and is rolled out over a sequence of 6 cells.</p>
-						<p>Source: <a href="https://www.youtube.com/watch?v=u4alGiomYP4" target=_blank>Martin Gorner, TensorFlow and Deep Learning without a PhD, Lecture @ Google Cloud Next ’17</a></p>
+						<p>This shows what the example of a basic RNN may look like. Here the network is 2 cells deep (hence it could be referred to a deep RNN), and is rolled out over a sequence of 6 cells.
+						<br>Source: <a href="https://www.youtube.com/watch?v=u4alGiomYP4" target=_blank>Martin Gorner, TensorFlow and Deep Learning without a PhD, Lecture @ Google Cloud Next ’17</a></p>
 					</div>
 				</div>
 
@@ -512,7 +533,7 @@
 				</div>
 
 				<div class="section-title text-center center">
-					<h2>Generation</h2>
+					<h2>Affect Generation</h2>
 					<hr>
 				</div>
 
@@ -541,8 +562,7 @@
 
 				<div class="row">
 					<div class="col-md-3 text-center">
-						<img src="img/dimitrios.jpg" class="img-circle" alt="Dimitrios Kollias" width="180" height="230">
-							
+						<img src="img/dimitrios.jpg" class="img-circle" alt="Dimitrios Kollias" width="180" height="230">	
 						<h3>Dimitrios Kollias</h3>
 						<p>Assistant Researcher, PhD Student
 						<br>Department of Computing
@@ -550,23 +570,122 @@
 						<br> <i class="fab fa-researchgate"> </i> <a href="https://www.researchgate.net/profile/Dimitrios_Kollias2" target=_blank style="color: #0cb;">   Research Gate</a>
 						<br><a>dimitrios.kollias15@imperial.ac.uk</a></p>
 					</div>
+					
+					<div class="col-md-8">
+						<h4>Publications:</h4>
+						<p>Here are several publications that have been written:</p>
+						
+						<div class="col-md-16">
+						<p>1. <a href="https://arxiv.org/pdf/1804.10938.pdf" target=_blank> Deep Affect Prediction in-the-wild: Aff-Wild Database and Challenge, Deep Architectures, and Beyond </a> -
+						provides an introduction to affect theory and introduces the Aff-Wild database and an architecture that outperforms the previous ones using this dataset, AffWildNet.</p>
+						</div>
+						
+						<p>2. <a href="https://arxiv.org/pdf/1811.05027.pdf" target=_blank> Generating faces for affect analysis </a> -
+						introduces a novel method for generating facial emotions.</p>
+						
+						<p>3. <a href="https://arxiv.org/pdf/1811.07771.pdf" target=_blank> A Multi-Task Learning & Generation Framework: Valence-Arousal, Action Units & Primary Expressions </a> -
+						proposes a solution for solving the multi-task issue in affect analysis.</p>
+						
+						<p>4. <a href="https://arxiv.org/pdf/1809.04359.pdf" target=_blank> Training Deep Neural Networks with Different Datasets In-the-wild: The Emotion Recognition Paradigm </a> -
+						this paper presents the idea of using networks to train future networks.</p>
+						
+						<p>5. <a href="https://arxiv.org/pdf/1805.01452.pdf" target=_blank> A Multi-component CNN-RNN Approach for Dimensional Emotion Recognition in-the-wild </a> -
+						introduces several methods of combining several CNN-RNN networks and presents their performance in the OMG Challenge.</p>
+						
+					</div>
 				</div>
 
-		   <div class="row">
-				 <div class="col-md-15 text-center">
-				 <h2> Publications </h2>
-				 <br>
-				 <hr>
-			 </div>
-		 </div>
+				<div class="section-title text-center center">
+					<h2>Other Works</h2>
+					<hr>
+				</div>
 
-		 <div class="row">
-		 </div>
-    </div>
+				<div class="row">
+					<div class="text">
+						<h4>OMG Emotion Challenge</h4>
+						<p>The One Minute Gradual-Emotion Recognition (OMG-Emotion) Challenge was an emotion recognition challenge that was based on visual analysis of data in-the-wild.
+						The dataset used was a selection of videos originating from YouTube of people reacting to various stimuli (watching videos or eating chillies for example).
+						The challenge is non-trivial for emotion recognition as the videos are truly in-the-wild data due to the varying physical conditions within each video: different lighting setups, some being inadequate; subjects recording themselves with different facial poses, orientations and angles; occlusions and change of head position; wide variety in the subject’s age, race and gender.
+						Furthermore, the videos themselves are varied in resolution, frame rate and undergoing various types of compression for online upload.</p>
+						<p>The dataset has a total of 420 relatively long videos, averaging out to approximately 1 minute each.
+						The image data in the videos provide dimensional data (and their corresponding contextual annotations in Valence Arousal format) as well as a transcript of what was spoken in the videos for further analysis. 
+						However, for this challenge Dimitrios and his team focused on the visual part of the provided videos; contextual analysis using the transcript could be combined with their work to improve results, but it's considered to be an extension of their work as their model is still effective in its own right.</p>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-8">
+						<p><a>Dimitrios' Approach</a></p>
+						<p>His approach is based on a CNN-RNN deep neural architecture that he had previously experimented with on the AffWild database and achieved the best results. The AffWild Database was used as a starting point to initialise the deep neural network (DNN) which was developed for the challenge.
+						<p>To tackle the challenge, he specifically tested several different variations of DNNs using both CNNs and CNN plus RNN models. The design of these were based on the already widely used CNN architectures: VGG-16 and ResNet-50. VGG-16 is a CNN architecture which uses 5 blocks of convolutional layers and max pooling, followed by 2 layers of fully connected neurons which output to the final layer of two neurons: one for valence, one for arousal. The ResNet-50 based CNN model contained 50 different blocks of varying sizes, again ending with the fully connected layers and 2 output neurons.</p>
+						<p>The CNN-RNN models have their convolutional blocks based on the two architectures. Three variations were based on VGG-16 with 1, 2 or 3 double-stacked RNNs after the convolutional layers (as well as trying to use hidden layers in between). The ResNet-50 based variation used only a single 2-layered RNN to give the final V-A estimates. Before training the data, the images were cropped to the bounding boxes that surrounded the subject’s faces, all resized to the same resolution, and the intensities of given V-A values were normalised to the range -1 to 1. Then before using the OMG-Emotion dataset, the networks were pre-trained on the AffWild database. Dimitrios’ team also employed post-processing techniques of the V-A values to eliminate random spikes and variations in the detected values.</p>
+					</div>
+					<div class="col-md-2 text-center">
+						<img src="img/omg2.png" class="img-responsive" alt="Network using VGG-16 RNN's">	
+					</div>
+					<div class="col-md-2 text-center">
+						<img src="img/omg1.png" class="img-responsive" alt="Network using ResNet-50">	
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="text">
+						<p>Above you can see the two networks used: the one using VGG-16 (left) and the one using ResNet-50 (right).</p>
+						<p><a>Results and conclusions</a></p>
+						<p>The results of each of the models’ exact performance can be found in Dimitrios’ paper titled: <a href="https://arxiv.org/pdf/1805.01452.pdf" target=_blank>A Multi-component CNN-RNN Approach for Dimensional Emotion Recognition in-the-wild</a>. In summary, it appeared that the VGG-16 based CNN-RNN networks fared better in general, but it appears that a single (double-stacked) RNN gave better performance for estimating arousal, while 3 RNNs more accurately modelled the valence values. Furthermore, the post-processing of the outputted V-A values gave improvements of 7.7% for valence and 3.5% for arousal.</p>
+						<p>The final models’ performance in the validating datasets were quite high in comparison the given baseline values: 0.49 versus 0.23 and 0.31 versus 0.12 for valence and arousal respectively. These values were submitted as part of the OMG-Emotion Challenge, where Dimitrios’ team placed 2nd out of those who only used visual data, and still managed to place 3rd in the overall challenge.</p>
+
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="text">
+						<h4>Innovations for Emotion Generation</h4>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-6">
+						<p>After the data from the 4DFAB database is annotated, it undergoes further processing to extract the 3D mesh of the expression for that given V-A value, or the affect classification. Firstly the data is transformed into a 3D mesh of the subject’s face, which still maintains the identifying data about the person: age, gender, race, etc. Then all of the 3D meshes (approximately 600,000 in total) are made to correlate with the same mesh topology, so that it appears that all of the emotions that are depicted in the sample data appears to be from the same face. The chosen face is a “mean” face that is taken from the Large Scale Facial Model (LSFM).
+						By doing so, it has hopefully stripped all of the identifying points from the data, leaving just information about how the human face reacts and is shaped for certain emotions.
+						His main achievement outlined in the paper on facial affect synthesis is that he developed a framework to generate images fully automatically from just a given V-A pair and an input image. In the pipeline of processes that it takes to produce the output image, there are two main steps. The first is organising and processing the data from the database so that a model is created for general cases.</p>
+						
+						<p>The modified meshes and their annotated V-A values are grouped together, and the data is discretized into 100 distinct classes. This is done so that when looking at specific values on the V-A scale that have only a few samples (thus still containing a lot of identity information) the mesh that is returned is representing an emotion alone, if slightly more generalised. Two different cases were tested, one where the space is split into 100 different areas, and another where the positive arousal values were further split into 200 different classes resulting in a total of 250 (as there was significantly more data). So once a V-A pair is inputted, the mean face is calculated from the meshes within that class.</p>
+						<p>This mesh is then passed onto the second section of the pipeline: fitting the generated affect to the input image’s face. The input image is assumed to be of a face with a neutral expression, which can then undergo a 3DMM fitting which converts the image to a 3D model similar to the meshes of the sample data. After this the estimated face of the subject is mapped onto the “mean” face calculated for the inputted V-A values. The textures are reapplied to the mesh, and then the final step is rendering the 3D face with the new emotion in the correct pose, which is then placed in the 2D photo and output from the system.</p>
+
+						<p>In summary, Dimitrios was able to render successfully somewhat photorealistic facial expressions onto a range of sample images. In future, his work will extend this unique approach to affect generation onto trying to generate facial Action Units, as opposed to just the dimensionality of each expression. This would give more meaning behind each affect from a more transitional and physical perspective.</p>
+						<p>The content was generated from this publication: <a href="https://arxiv.org/pdf/1811.05027.pdf" target=_blank>Generating Faces For Affect Analysis</a></p>
+					</div>
+					
+					<div class="col-md-6 text-center">
+						<br><br><br><br><br><br><br><br><br><br>
+						<img src="img/gen1.png" class="img-responsive" alt="Phase 1 of Generation">
+						<p>Above is the first section of the automatic facial synthesis pipeline: it shows the sequence of processes that take the initial user input valence-arousal values, and how then the generated facial mesh is calculated.</p>
+						<br><br><br><br><br>
+						<img src="img/gen2.png" class="img-responsive" alt="Phase 2 of Generation">
+						<p>This picture shows the latter half of the pipeline. Here the input image undergoes its conversion to a 3D mesh, and then combined with the generated mesh to produce the output of the model.</p>
+					</div>
+				</div>
+				
+				
+			</div>
 		</section>
 
 		<section id="reference">
+		
 			<div class="container">
+			    <div class="section-title text-center center">
+					<h2>References</h2>
+					<hr>
+			    </div>
+				<div class="row">
+				<div class="text">
+				<h3> The information of this website has been taken from Dimitrios's <a class="page-scroll" href="#about"> publications </a>, and the following sources: </h3>
+				<p> 1. <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&fbclid=IwAR1TDBZHkCtoFxcUknnSVzp-zWPLL_E1HWo85FGuOw4LIxCRZkbX52GOa_Q" target=_blank>A series of video explaining how neural networks work </a> </p>
+				<p> 2. Nathanson, Donald L. (March 15, 1998). "From Empathy to Community". The Annual of Psychoanalysis. Chicago Institute for Psychoanalysis. 25. Retrieved November 10, 2014. </p>
+				<p> 3. <a href="https://www.youtube.com/watch?v=u4alGiomYP4" target=_blank>Martin Gorner, TensorFlow and Deep Learning without a PhD, Lecture @ Google Cloud Next ’17 </a> </p>
+				</div>
+				</div>
 			</div>
 		</section>
 
@@ -618,7 +737,7 @@
 						<div class="modal-body">
 							<div class="row">
 								<div class="col-md-3">
-									<img src="img/calin.jpg" class ="img-responsive" alt="A Picture of Calin">
+									<img src="img/prajitstate.jpg" class ="img-responsive" alt="A Picture of Calin">
 								</div>
 								<div class="col-md-9">
 									<h4>Undergraduate Student - Department of Computing</h4>
@@ -711,7 +830,6 @@
 					</div>
 				</div>
 			</div>
-
 
 		</section>
 
